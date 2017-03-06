@@ -143,7 +143,7 @@ if(!is_writable("$files") and !is_writable("$filem")){
         <a style="font-size: 16px;line-height: 22px;">密　　码：</a><input type="text" name="db_pass" value="" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/><br/>
         <a href="http://bbs.hongyuvip.com/?/article/25" target="_blank" style="font-size: 16px;color: #FFF;text-decoration: none;padding: 5px 15px;background: red;border-radius: 5px;">安装教程</a><button type="submit" name="install" style="font-size: 16px;float: right;cursor: pointer;">开始安装</button>
     </form>
-    <div style="width: 100%;line-height: 35px;font-size: 12px;color: #585858;text-align: center;position:fixed;bottom:0;"><a href="http://hongyuvip.com" target="_blank" style="text-decoration: none;color: #585858;">Copyright © 2015 - 2016 鸿宇科技 版权所有 盗版必究 本程序仅供学习交流使用，请勿用于商业用途。</a></div>
+    <div style="width: 100%;line-height: 35px;font-size: 12px;color: #585858;text-align: center;position:fixed;bottom:0;"><a href="http://hongyuvip.com" target="_blank" style="text-decoration: none;color: #585858;">Copyright © 2015 - <?php echo date('Y')?> 鸿宇科技 版权所有 盗版必究 本程序仅供学习交流使用，请勿用于商业用途。</a></div>
 </div>
 <script type="text/javascript">
     function check(){
