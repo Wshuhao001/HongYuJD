@@ -102,7 +102,7 @@ if ($event['event'] == "unsubscribe"){ // 用户主动删除
 }
 //查询用户输入是否为指定命令
 if($type == "text"){
-	$userKey = $api->keywordsToKey($content,&$diy_type);
+	$userKey = $api->keywordsToKey($content,$diy_type);
 	if($userKey) $event = array('event'=>'CLICK','key'=>$userKey);
 }
 $weburl .= $api->createTokenLoginUrl($wxid,$api->dir);
@@ -111,7 +111,7 @@ if ($event['event'] == "CLICK"){
 	$content = $event['key'];
 	if(count($event) == 5)
 	{
-		$userKey = $api->keywordsToKey($content,&$diy_type);
+		$userKey = $api->keywordsToKey($content,$diy_type);
 	}
 	$api->sendIntegral($wxid,$num=0,$content);
 	switch($content){
