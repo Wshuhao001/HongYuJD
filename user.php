@@ -1325,11 +1325,10 @@ function action_act_edit_profile ()
 		{
 			show_message('用户名已经存在！');
 		}
-		if(! empty($username) && preg_match("/[\x7f-\xff]/", $username))
+		/*if(! empty($username) && preg_match("/[\x7f-\xff]/", $username))
 		{
-			
 			show_message("用户名存在中文");
-		}
+		}*/
 	}
 	/* 代码增加2014-12-23 by bbs.hongyuvip.com _end */
 	if(! empty($office_phone) && ! preg_match('/^[\d|\_|\-|\s]+$/', $office_phone))

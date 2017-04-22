@@ -7,8 +7,16 @@ var _CHECK_RESULT = {
 };
 
 /* $Id : user.js 4865 2007-01-31 14:04:10Z paulgao $ */
-/* 代码增加2014-12-23 by bbs.hongyuvip.com _star */
+
 function check_username(val) {
+    if (val == '') {
+        document.getElementById('username_message').innerHTML = '用户名不能为空！';
+    } else {
+        Ajax.call('user.php?act=check_username', 'username=' + val, checkusername_callback, 'GET', 'TEXT', true, true);
+    }
+}
+
+/*function check_username(val) {
 	if (val == '') {
 		document.getElementById('username_message').innerHTML = '用户名不能为空！';
 	} else if (val.match(/[\u4e00-\u9fa5]/)) {
@@ -16,7 +24,7 @@ function check_username(val) {
 	} else {
 		Ajax.call('user.php?act=check_username', 'username=' + val, checkusername_callback, 'GET', 'TEXT', true, true);
 	}
-}
+}*/
 
 function checkusername_callback(result) {
 	if (result == 'true') {
