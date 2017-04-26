@@ -134,13 +134,13 @@ if(!is_writable("$files") and !is_writable("$filem")){
 </head>
 <body style="width: 100%;height: 100%;margin: 0;padding: 0;">
 <div style="background: url(login_dl.jpg) no-repeat;background-size:100% 100%;width: 100%;height: 100%;float: left;position:fixed;">
-    <h1 style="text-align: center;padding: 80px 0 30px 0;border: ">HongYuJD-V7.2 多用户商城系统</h1>
+    <h1 style="text-align: center;padding: 80px 0 30px 0;border: ">HongYuJD-V7.7 多用户商城系统</h1>
     <h2 style="text-align: center;">鸿宇科技提供唯一售后技术支持</h2>
     <form action="" method="post" style="width: 300px;height: auto;margin: 60px auto 0 auto;padding: 40px;border: 2px solid #B6B6B6;border-radius: 5px;background-color: #F5F5F5" name="install" onSubmit="return check();">
         <a style="font-size: 16px;line-height: 22px;">主机地址：</a><input type="text" name="db_host" value="localhost:3306" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/>
         <a style="font-size: 16px;line-height: 22px;">数据库名：</a><input type="text" name="db_name" value="" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/>
         <a style="font-size: 16px;line-height: 22px;">用 户 名：</a><input type="text" name="db_user" value="" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/>
-        <a style="font-size: 16px;line-height: 22px;">密　　码：</a><input type="text" name="db_pass" value="" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/><br/>
+        <a style="font-size: 16px;line-height: 22px;">密　　码：</a><input type="password" name="db_pass" value="" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/><br/>
         <a href="http://bbs.hongyuvip.com/?/article/25" target="_blank" style="font-size: 16px;color: #FFF;text-decoration: none;padding: 5px 15px;background: red;border-radius: 5px;">安装教程</a><button type="submit" name="install" style="font-size: 16px;float: right;cursor: pointer;">开始安装</button>
     </form>
     <div style="width: 100%;line-height: 35px;font-size: 12px;color: #585858;text-align: center;position:fixed;bottom:0;"><a href="http://hongyuvip.com" target="_blank" style="text-decoration: none;color: #585858;">Copyright © 2015 - <?php echo date('Y')?> 鸿宇科技 版权所有 盗版必究 本程序仅供学习交流使用，请勿用于商业用途。</a></div>
