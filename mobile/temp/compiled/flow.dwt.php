@@ -813,50 +813,6 @@ if ($this->_foreach['pay']['total'] > 0):
             </div>
       
       </div></section>
-<?php if ($this->_var['allow_use_surplus']): ?>
-        <section class="order-info">
-     <div class="order-list">
-      <div class="content ptop0">
-
-      <div class="panel-body">
-            <div class="allow_user_surplus">
-            <style type="text/css">
-                            .allow_user_surplus{padding:10px 5px 10px; line-height:38px;}
-                            .allow_user_surplus p{float:left;height:27px;line-height:27px;}
-                            .is_user_surplus{vertical-align:middle;margin-left:5px;font-size:14px;}
-                            #allow_user_surplus{float:left;margin-left:20px; display:none}
-                            #allow_user_surplus .surplus{height:15px;line-height:15px;width:100px;padding:5px;border:1px #ddd solid}
-                            #allow_user_surplus .surplus_desc{margin-right:15px}
-                            #allow_user_surplus .your_surplus{color:#E31939}
-                            #allow_user_surplus .open_surplus{margin-left:15px}
-                            #allow_user_surplus .open_surplus a{margin:0px 3px;color:#E31939}
-                    </style>
-            <p><input type="checkbox" class="b_checkbox" id="issurplus" onclick="checkboxOnclick(this)" style="vertical-align:middle; cursor:pointer" /><span class="is_user_surplus">使用账户余额支付</span></p>
-           <div class="clearfix"></div>
-            <div id="allow_user_surplus">
-                    <span class="surplus_desc"><input name="surplus" type="text" class="surplus" id="ECS_SURPLUS"  value="0" onblur="changeSurplus(this.value);" />&nbsp;&nbsp;元</span>
-                  <br>
-                您当前的可用余额为:<span class="your_surplus" style="font-size:14px; font-weight:700;"><?php echo empty($this->_var['your_surplus']) ? '0' : $this->_var['your_surplus']; ?></span><span id="ECS_SURPLUS_NOTICE_<?php echo $this->_var['key']; ?>" class="notice"></span><br>
-                <?php if ($this->_var['is_surplus_open'] == 0): ?><span class="open_surplus">未开通余额支付,请在电脑端登录开通</span><?php endif; ?>
-            </div>
-    <script type="text/javascript">
-    $('#issurplus').attr('checked',false);
-    function checkboxOnclick(checkbox){ 
-            var surplus = <?php echo empty($this->_var['your_surplus']) ? '0' : $this->_var['your_surplus']; ?>;
-            if ( checkbox.checked == true){
-                    document.getElementById("allow_user_surplus").style.display = "block";
-                    changeSurplus(surplus);
-            }else{
-                    document.getElementById("allow_user_surplus").style.display = "none";
-                    changeSurplus(0);
-            }
-    }
-    </script>
-    <div class="clearfix"></div>
-            </div>
-        </div>
-        </div></div></section>
-<?php endif; ?>
       <section class="order-info">
        <div class="order-list">
       <div class="content ptop0">
