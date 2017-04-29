@@ -189,7 +189,7 @@
 
   <tr>
 
-    <td>鸿宇多用户商城 多商户 WAP V4版</td>
+    <td>HongYuJD 多商户 WAP V7.7版</td>
 
     <td>客服 QQ 1527200768</td>
 
