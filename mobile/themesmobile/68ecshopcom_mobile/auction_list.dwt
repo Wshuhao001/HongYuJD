@@ -20,13 +20,13 @@
 <script type="text/javascript" src="themesmobile/68ecshopcom_mobile/js/jquery.js"></script>
 <script type="text/javascript" src="themesmobile/68ecshopcom_mobile/js/TouchSlide.1.1.js"></script>
 {insert_scripts files='jquery.json.js,transport.js'}
-{* °üº¬½Å±¾ÎÄ¼ş *}
+{* åŒ…å«è„šæœ¬æ–‡ä»¶ *}
 {insert_scripts files='common.js'}
 </head>
 <body>
 <header id="header" class='header'>
-  <h1>ÅÄÂôÁĞ±í</h1>
-  <a href="javascript:history.back(-1)" class="back">·µ»Ø</a> 
+  <h1>æ‹å–åˆ—è¡¨</h1>
+  <a href="javascript:history.back(-1)" class="back">è¿”å›</a>
 </header>
 <div id="scrollimg" class="scrollimg">
 	<div class="bd">
@@ -41,21 +41,21 @@
 	</div>
 </div>
 <script type="text/javascript">
-				TouchSlide({ 
+				TouchSlide({
 					slideCell:"#scrollimg",
-					titCell:".hd ul", //¿ªÆô×Ô¶¯·ÖÒ³ autoPage:true £¬´ËÊ±ÉèÖÃ titCell Îªµ¼º½ÔªËØ°ü¹ü²ã
-					mainCell:".bd ul", 
-					effect:"leftLoop", 
-					autoPage:true,//×Ô¶¯·ÖÒ³
-					autoPlay:true //×Ô¶¯²¥·Å
+					titCell:".hd ul", //å¼€å¯è‡ªåŠ¨åˆ†é¡µ autoPage:true ï¼Œæ­¤æ—¶è®¾ç½® titCell ä¸ºå¯¼èˆªå…ƒç´ åŒ…è£¹å±‚
+					mainCell:".bd ul",
+					effect:"leftLoop",
+					autoPage:true,//è‡ªåŠ¨åˆ†é¡µ
+					autoPlay:true //è‡ªåŠ¨æ’­æ”¾
 				});
 			</script>
 <div id="tbh5v0">
-  <section class="innercontent"> 
-  	 <!-- {if $auction_list} Èç¹ûÓĞÅÄÂô»î¶¯ --> 
+  <section class="innercontent">
+  	 <!-- {if $auction_list} å¦‚æœæœ‰æ‹å–æ´»åŠ¨ -->
  	<script>
 <!--
-/*µÚÒ»ÖÖĞÎÊ½ µÚ¶şÖÖĞÎÊ½ ¸ü»»ÏÔÊ¾ÑùÊ½*/
+/*ç¬¬ä¸€ç§å½¢å¼ ç¬¬äºŒç§å½¢å¼ æ›´æ¢æ˜¾ç¤ºæ ·å¼*/
 function setTabCatGoods(name,cursel,n){
 for(i=1;i<=n;i++){
 var menu=document.getElementById(name+i);
@@ -70,9 +70,9 @@ menu.className=i==cursel?"curr":"";
   	<div class="tab">
     	<div class="tab_tit">
     		<ul>
-        		<li class="curr" id="goods1" onclick="setTabCatGoods('goods',1,3)">ÕıÔÚ½øĞĞ</li>
-            	<li id="goods2" onclick="setTabCatGoods('goods',2,3)">¼´½«¿ªÊ¼</li>
-            	<li id="goods3" onclick="setTabCatGoods('goods',3,3)">ÒÑ¾­½áÊø</li>
+        		<li class="curr" id="goods1" onclick="setTabCatGoods('goods',1,3)">æ­£åœ¨è¿›è¡Œ</li>
+            	<li id="goods2" onclick="setTabCatGoods('goods',2,3)">å³å°†å¼€å§‹</li>
+            	<li id="goods3" onclick="setTabCatGoods('goods',3,3)">å·²ç»ç»“æŸ</li>
         	</ul>
         </div>
         <div class="tab_con">
@@ -82,28 +82,28 @@ menu.className=i==cursel?"curr":"";
         		    <!-- {if $auction.check_time eq 0 && $auction.c_0 && $auction.imgfile_c neq ''} -->
                        <li>
             			<div class="con_top">
-                        	<span class="count"><font>{$auction.act_count}</font></br>´Î³ö¼Û</span>
+                        	<span class="count"><font>{$auction.act_count}</font></br>æ¬¡å‡ºä»·</span>
                         	<a href="{$auction.url}"><img src="../../{$auction.act_imgfile}" /></a>
                         </div>
                         <div class="con_bottom">
                         	<p class="name"><a href="{$auction.url}">{$auction.goods_name}</a></p>
-               				<p>{$lang.act_status}£º 
-                				<!-- {if $auction.status_no eq 0} --> 
+               				<p>{$lang.act_status}ï¼š
+                				<!-- {if $auction.status_no eq 0} -->
                 				{$lang.au_pre_start}
-                				<!-- {elseif $auction.status_no eq 1} --> 
+                				<!-- {elseif $auction.status_no eq 1} -->
                 				{$lang.au_under_way_1}
-                				<!-- {else} --> 
+                				<!-- {else} -->
                 				{$lang.au_finished}
                 				<!-- {/if} -->
                             </p>
-                			<p>{$lang.au_start_price}£º{$auction.formated_start_price}</p>
-                			<!-- {if $auction.end_price gt 0} --> 
-                			<p>{$lang.au_end_price}£º{$auction.formated_end_price}</p> 
-                			<!-- {/if} --> 
+                			<p>{$lang.au_start_price}ï¼š{$auction.formated_start_price}</p>
+                			<!-- {if $auction.end_price gt 0} -->
+                			<p>{$lang.au_end_price}ï¼š{$auction.formated_end_price}</p>
+                			<!-- {/if} -->
                         </div>
                     </li>
-                    <!-- {/if} --> 
-                    <!--{/foreach}--> 
+                    <!-- {/if} -->
+                    <!--{/foreach}-->
                 </ul>
             </div>
             <div class="mc " id="con_goods_2">
@@ -112,28 +112,28 @@ menu.className=i==cursel?"curr":"";
         		    <!-- {if $auction.check_time eq 1 && $auction.c_1 && $auction.imgfile_c neq ''} -->
                     <li>
             			<div class="con_top">
-                        	<span class="count"><font>{$auction.act_count}</font></br>´Î³ö¼Û</span>
+                        	<span class="count"><font>{$auction.act_count}</font></br>æ¬¡å‡ºä»·</span>
                             <a href="{$auction.url}"><img src="../../{$auction.act_imgfile}"  /></a>
                         </div>
                         <div class="con_bottom">
                         	<p class="name"><a href="{$auction.url}">{$auction.goods_name}</a></p>
-               				<p>{$lang.act_status}£º 
-                				<!-- {if $auction.status_no eq 0} --> 
+               				<p>{$lang.act_status}ï¼š
+                				<!-- {if $auction.status_no eq 0} -->
                 				{$lang.au_pre_start}
-                				<!-- {elseif $auction.status_no eq 1} --> 
+                				<!-- {elseif $auction.status_no eq 1} -->
                 				{$lang.au_under_way_1}
-                				<!-- {else} --> 
+                				<!-- {else} -->
                 				{$lang.au_finished}
                 				<!-- {/if} -->
                             </p>
-                			<p>{$lang.au_start_price}£º{$auction.formated_start_price}</p>
-                			<!-- {if $auction.end_price gt 0} --> 
-                			<p>{$lang.au_end_price}£º{$auction.formated_end_price}</p> 
-                			<!-- {/if} --> 
+                			<p>{$lang.au_start_price}ï¼š{$auction.formated_start_price}</p>
+                			<!-- {if $auction.end_price gt 0} -->
+                			<p>{$lang.au_end_price}ï¼š{$auction.formated_end_price}</p>
+                			<!-- {/if} -->
                         </div>
                     </li>
-                    <!-- {/if} --> 
-                    <!--{/foreach}--> 
+                    <!-- {/if} -->
+                    <!--{/foreach}-->
                 </ul>
             </div>
             <div class="mc " id="con_goods_3">
@@ -142,35 +142,35 @@ menu.className=i==cursel?"curr":"";
         		    <!-- {if $auction.check_time eq 2 && $auction.c_2 && $auction.imgfile_c neq ''} -->
                     <li>
             			<div class="con_top">
-                        	<span class="count"><font>{$auction.act_count}</font></br>´Î³ö¼Û</span>
+                        	<span class="count"><font>{$auction.act_count}</font></br>æ¬¡å‡ºä»·</span>
                             <a href="{$auction.url}"><img src="../../{$auction.act_imgfile}"  /></a>
                         </div>
                         <div class="con_bottom">
                         	<p class="name"><a href="{$auction.url}">{$auction.goods_name}</a></p>
-               				<p>{$lang.act_status}£º 
-                				<!-- {if $auction.status_no eq 0} --> 
+               				<p>{$lang.act_status}ï¼š
+                				<!-- {if $auction.status_no eq 0} -->
                 				{$lang.au_pre_start}
-                				<!-- {elseif $auction.status_no eq 1} --> 
+                				<!-- {elseif $auction.status_no eq 1} -->
                 				{$lang.au_under_way_1}
-                				<!-- {else} --> 
+                				<!-- {else} -->
                 				{$lang.au_finished}
                 				<!-- {/if} -->
                             </p>
-                			<p>{$lang.au_start_price}£º{$auction.formated_start_price}</p>
-                			<!-- {if $auction.end_price gt 0} --> 
-                			<p>{$lang.au_end_price}£º{$auction.formated_end_price}</p> 
-                			<!-- {/if} --> 
+                			<p>{$lang.au_start_price}ï¼š{$auction.formated_start_price}</p>
+                			<!-- {if $auction.end_price gt 0} -->
+                			<p>{$lang.au_end_price}ï¼š{$auction.formated_end_price}</p>
+                			<!-- {/if} -->
                         </div>
                     </li>
-                    <!-- {/if} --> 
-                    <!--{/foreach}--> 
+                    <!-- {/if} -->
+                    <!--{/foreach}-->
                 </ul>
             </div>
         </div>
     </div>
     <!--{if $auction_list_hot}-->
     <div class="auction_hot">
-    	<h2>½ñÈÕÈÈÅÄ</h2>
+    	<h2>ä»Šæ—¥çƒ­æ‹</h2>
         <div class="mc">
    		  <ul>
       		<!-- {foreach from=$auction_list_hot item=auction name=name} -->
@@ -179,39 +179,39 @@ menu.className=i==cursel?"curr":"";
       				<div class="p-img"><a href="{$auction.url}"><img width="95" height="95" alt="{$auction.goods_name}"  src="../../{$auction.goods_img}"/></a></div>
                     <div style="float:right;width:65%">
       					<div class="rate"><a href="{$auction.url}">{$auction.goods_name|truncate:20}</a></div>
-      					<div class="p-price"><span>µ±Ç°¼Û£º</span><strong>{$auction.formated_current_price}</strong></div>
-                    	<div class="p-count"><i></i><strong>{$auction.act_count}´Î</strong></div>
+      					<div class="p-price"><span>å½“å‰ä»·ï¼š</span><strong>{$auction.formated_current_price}</strong></div>
+                    	<div class="p-count"><i></i><strong>{$auction.act_count}æ¬¡</strong></div>
                     </div>
       			</li>
-      		<!-- {/if} --> 
+      		<!-- {/if} -->
       		<!-- {/foreach} -->
     		</ul>
   		</div>
     </div>
-    <!-- {/if} --> 
+    <!-- {/if} -->
     <div class="layout_list">
-    <h2>È«²¿ÅÄÂô</h2>
+    <h2>å…¨éƒ¨æ‹å–</h2>
       <ul class="clearfix">
-      <!-- {foreach from=$auction_list item=auction name=name} Ñ­»·ÅÄÂô»î¶¯¿ªÊ¼ -->
+      <!-- {foreach from=$auction_list item=auction name=name} å¾ªç¯æ‹å–æ´»åŠ¨å¼€å§‹ -->
   		<li {if $smarty.foreach.name.iteration mod 2 eq 1}class="layout_list_1"{/if}>
         	<a href="{$auction.url}" target="_self" class="layout_pic"><img class="err-product" src="../../{$auction.goods_img}" ></a>
           	<div class="layout_cont">
             	<a class="layout_name" target="_self" href="{$auction.url}">{$auction.goods_name|truncate:26}</a>
-            	<div class="layout_price">µ±Ç°¼Û:<span>{$auction.formated_current_price}</span></div>
+            	<div class="layout_price">å½“å‰ä»·:<span>{$auction.formated_current_price}</span></div>
                 	{if $auction.status_no eq 0}
-                <a href="{$auction.url}" class="bid_btn1" target="_self">¼´½«¿ªÊ¼</a>
+                <a href="{$auction.url}" class="bid_btn1" target="_self">å³å°†å¼€å§‹</a>
                     {elseif $auction.status_no eq 1}
-                <a href="{$auction.url}" class="bid_btn2" target="_self">ÎÒÒª³ö¼Û</a>
+                <a href="{$auction.url}" class="bid_btn2" target="_self">æˆ‘è¦å‡ºä»·</a>
                     {else}
-                <a href="{$auction.url}" class="bid_btn3" target="_self">ÒÑ¾­½áÊø</a>
+                <a href="{$auction.url}" class="bid_btn3" target="_self">å·²ç»ç»“æŸ</a>
                     {/if}
                 </a>
           	</div>
         </li>
-        <!--{/foreach}--> 
+        <!--{/foreach}-->
   	  </ul>
     </div>
-	</div>    
+	</div>
     <!-- {/if} -->
   </section>
 </div>
