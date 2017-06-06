@@ -13,7 +13,7 @@
  * $Date: 2011-01-19 14:29:08 +0800 (周三, 2011-01-19) $
  * $Id: init.php 17217 2016-01-19 06:29:08Z Shadow & 鸿宇
 */
-
+require(ROOT_PATH . 'includes/safety.php');
 error_reporting(7);
 
 if (!defined('IN_ECS'))

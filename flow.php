@@ -2713,7 +2713,7 @@ elseif ($_REQUEST['step'] == 'done')
 	    }
 
     	//获取佣金id
-    	$order['rebate_id'] = 0;//get_order_rebate($ok);
+    	$order['rebate_id'] = get_order_rebate($ok);	// Shadow 修复商家佣金结算bug
 
     	//下单来源
 		$order['froms'] = WEB_FROM;

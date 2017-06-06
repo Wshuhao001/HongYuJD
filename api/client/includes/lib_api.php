@@ -1,5 +1,4 @@
 <?php
-
     function dispatch($post)
     {
         // 分发器数组
@@ -245,6 +244,11 @@
      */
     function API_UserLogin($post)
     {
+        if (get_magic_quotes_gpc()) {
+            $post['UserId'] = $post['UserId'];
+        }else{
+            $post['UserId'] = addslashes($post['UserId']);
+        }
         $post['username'] = isset($post['UserId']) ? trim($post['UserId']) : '';
         $post['password'] = isset($post['Password']) ? strtolower(trim($post['Password'])) : '';
 

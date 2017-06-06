@@ -34,7 +34,7 @@ define('ROOT_PATH', str_replace('api', '', str_replace('\\', '/', dirname(__FILE
 @ini_set('session.use_trans_sid', 0);
 @ini_set('session.use_cookies',   1);
 @ini_set('session.auto_start',    0);
-@ini_set('display_errors',        1);
+@ini_set('display_errors',        0);
 
 if (DIRECTORY_SEPARATOR == '\\')
 {
@@ -111,7 +111,7 @@ $sess       = new cls_session($db, $ecs->table('sessions'), $ecs->table('session
 $_CFG = load_config();
 
 /* 初始化用户插件 */
-$user =& init_users();
+$user = init_users();
 
 if ((DEBUG_MODE & 1) == 1)
 {

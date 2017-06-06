@@ -199,7 +199,7 @@ function check_method()
         {
             die('Hacking attempt');
         }
-        elseif (!isset($_GET['t']) || $GLOBALS['timestamp'] - $_GET['t'] > 60 || empty($_SERVER['HTTP_REFERER']))
+        elseif (!isset($_GET['t']) || $GLOBALS['timestamp'] - intval($_GET['t']) > 60 || empty($_SERVER['HTTP_REFERER']))
         {
             exit;
         }
