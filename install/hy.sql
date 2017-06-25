@@ -10895,7 +10895,7 @@ CREATE TABLE `ecs_user_rank` (
 INSERT INTO `ecs_user_rank` VALUES ('1', '普通会员', '0', '999', '100', '0', '0', '0');
 INSERT INTO `ecs_user_rank` VALUES ('2', '铜牌会员', '1000', '5999', '95', '1', '0', '0');
 INSERT INTO `ecs_user_rank` VALUES ('3', '金牌会员', '6000', '9999', '90', '1', '0', '0');
-INSERT INTO `ecs_user_rank` VALUES ('4', '钻石会员', '10000', '2147483647', '85', '1', '0', '0');
+INSERT INTO `ecs_user_rank` VALUES ('4', '钻石会员', '10000', '999999', '85', '1', '0', '0');
 INSERT INTO `ecs_user_rank` VALUES ('5', 'QQ', '0', '0', '100', '0', '1', '0');
 
 -- ----------------------------
