@@ -216,8 +216,8 @@ function sendSMS($mobile_phone, $content)
     include_once 'lib/api_sdk/Dysmsapi/Request/V20170525/QuerySendDetailsRequest.php';
 
     //此处需要替换成自己的AK信息
-    $accessKeyId = "LTAI36HLjFYw3QFO";
-    $accessKeySecret = "siZOccwcaM3XGP5AAbJL8vBnzTYFoM";
+    $accessKeyId = $hy_appkey;
+    $accessKeySecret = $hy_secretkey;
     //短信API产品名
     $product = "Dysmsapi";
     //短信API产品域名
