@@ -23,7 +23,7 @@ error_reporting(0);
 ?>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>阿里大鱼短信管理</title>
+<title>阿里短信管理</title>
 <style type="text/css" >
     :focus{outline:none;}
     .myem {font-size: 15px;color: black;font-weight: bold;}
@@ -40,17 +40,17 @@ error_reporting(0);
     p{font:12px "sans-serif", "Arial", "Verdana";}
 </style>
 <body>
-<h3 align="center">阿里大鱼短信管理</h3>
+<h3 align="center">阿里短信管理</h3>
 <div class="main">
     <form method="post" action="">
         <div class="div1">
-                <span class="myem">请填写阿里大鱼短信参数<a href="http://www.alidayu.com" target="_blank">申请账号</a></span>
+            <span class="myem">请填写阿里短信参数<a href="https://dysms.console.aliyun.com/dysms.htm" target="_blank">申请账号</a></span>
             <p>　App Key&nbsp;：<input type="text" id="appkey" name="hy_appkey" value='<?php echo $hy_appkey ?>'/>
             <p>App Secret：<input type="text" id="secretkey" name="hy_secretkey" style="width: 228px;" value='<?php echo $hy_secretkey ?>'/><p>
-            <p style="color: #808080;">　特别注意：① 阿里大鱼短信环境必须是：PHP5.3　MySQL5.1/5.5</p>
-            <p style="color: #808080;">　　　　　　② 请前往：系统设置 -> 商店设置 -> 短信设置 填写短信模板ID和短信签名（请从阿里大鱼->配置管理中获取模板ID和短信签名）。</p>
+            <p style="color: #808080;">　特别注意：① 阿里短信环境必须是：PHP5.3　MySQL5.1/5.5</p>
+            <p style="color: #808080;">　　　　　　② 请前往：系统设置 -> 商店设置 -> 短信设置 填写短信模板ID和短信签名（请从阿里->配置管理中获取模板ID和短信签名）。</p>
             <p style="color: #808080;">　　　　　　③ 如需技术支持请联系：鸿宇科技 & Shadow QQ:1527200768</p>
-            <p style="color: #808080;">　　　　　　④ 点击查看<a href="http://bbs.hongyuvip.com/?/article/125" target="_blank" style="margin: 0 5px;">鸿宇版阿里大鱼短信使用教程</a></p>
+            <p style="color: #808080;">　　　　　　④ 点击查看<a href="http://bbs.hongyuvip.com/?/article/239" target="_blank" style="margin: 0 5px;">鸿宇版阿里短信使用教程</a></p>
         </div>
 
         <!-- 短信模板 -->
@@ -72,7 +72,7 @@ error_reporting(0);
         <input class="button" type="submit" name="submit" id="submit" value="提交修改"/><br/><br/><br/>
     </form>
 </div>
-<div style="width: 100%;line-height: 35px;font-size: 12px;color: #585858;text-align: center;position:fixed;bottom:0;border-top: 1px solid #DCDCDC;"><a href="http://hongyuvip.com" target="_blank" style="text-decoration: none;color: #585858;">Copyright © 2015 - 2016 鸿宇科技 版权所有 盗版必究 </a></div>
+<div style="width: 100%;line-height: 35px;font-size: 12px;color: #585858;text-align: center;position:fixed;bottom:0;border-top: 1px solid #DCDCDC;"><a href="http://hongyuvip.com" target="_blank" style="text-decoration: none;color: #585858;">Copyright © 2015 - 2018 鸿宇科技 版权所有 盗版必究 </a></div>
 </body>
 </html>
 
