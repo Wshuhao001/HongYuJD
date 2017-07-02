@@ -245,7 +245,7 @@ function sendSMS($mobile_phone, $content)
     //发起访问请求
     $acsResponse = $acsClient->getAcsResponse($request);
 
-    if ($acsResponse->result === 'OK') {
+    if ($acsResponse->Code === 'OK') {
         return true;
     } else {
         if ($hy_showbug == true) {
