@@ -45,8 +45,8 @@ error_reporting(0);
     <form method="post" action="">
         <div class="div1">
             <span class="myem">请填写阿里短信参数<a href="https://dysms.console.aliyun.com/dysms.htm" target="_blank">申请账号</a></span>
-            <p>　App Key&nbsp;：<input type="text" id="appkey" name="hy_appkey" value='<?php echo $hy_appkey ?>'/>
-            <p>App Secret：<input type="text" id="secretkey" name="hy_secretkey" style="width: 228px;" value='<?php echo $hy_secretkey ?>'/><p>
+            <p>Access Key ID：<input type="text" id="appkey" name="hy_appkey" value='<?php echo $hy_appkey ?>'/>
+            <p>Access Key Secret：<input type="text" id="secretkey" name="hy_secretkey" style="width: 228px;" value='<?php echo $hy_secretkey ?>'/><p>
             <p style="color: #808080;">　特别注意：① 阿里短信环境必须是：PHP5.3　MySQL5.1/5.5</p>
             <p style="color: #808080;">　　　　　　② 请前往：系统设置 -> 商店设置 -> 短信设置 填写短信模板ID和短信签名（请从阿里->配置管理中获取模板ID和短信签名）。</p>
             <p style="color: #808080;">　　　　　　③ 如需技术支持请联系：鸿宇科技 & Shadow QQ:1527200768</p>
