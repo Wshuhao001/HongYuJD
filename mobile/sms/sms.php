@@ -208,34 +208,54 @@ if ($_GET['act'] == 'send') {
 
 function sendSMS($mobile_phone, $content)
 {
-    include "hy_config.php";
-    include "AliSDK/TopSdk.php";
     date_default_timezone_set('Asia/Shanghai');
-    $c = new TopClient;
-    $c->appkey = $hy_appkey;
-    $c->secretKey = $hy_secretkey;
-    $req = new AlibabaAliqinFcSmsNumSendRequest;
-    $req->setExtend("123456");
-    $req->setSmsType("normal");
-    $req->setSmsFreeSignName($content[2]);
-    $req->setSmsParam($content[1]);
-    $req->setRecNum($mobile_phone);
-    $req->setSmsTemplateCode($content[0]);
-    $resp = $c->execute($req);
-    $hy_result = $resp->result->success;
 
-    if ($hy_result == true) {
+    include "hy_config.php";
+    include 'lib/api_sdk/aliyun-php-sdk-core/Config.php';
+    include_once 'lib/api_sdk/Dysmsapi/Request/V20170525/SendSmsRequest.php';
+    include_once 'lib/api_sdk/Dysmsapi/Request/V20170525/QuerySendDetailsRequest.php';
+
+    //此处需要替换成自己的AK信息
+    $accessKeyId = "LTAI36HLjFYw3QFO";
+    $accessKeySecret = "siZOccwcaM3XGP5AAbJL8vBnzTYFoM";
+    //短信API产品名
+    $product = "Dysmsapi";
+    //短信API产品域名
+    $domain = "dysmsapi.aliyuncs.com";
+    //暂时不支持多Region
+    $region = "cn-hangzhou";
+
+    //初始化访问的acsCleint
+    $profile = DefaultProfile::getProfile($region, $accessKeyId, $accessKeySecret);
+    DefaultProfile::addEndpoint("cn-hangzhou", "cn-hangzhou", $product, $domain);
+    $acsClient = new DefaultAcsClient($profile);
+
+    $request = new Dysmsapi\Request\V20170525\SendSmsRequest;
+    //必填-短信接收号码
+    $request->setPhoneNumbers($mobile_phone);
+    //必填-短信签名
+    $request->setSignName($content[2]);
+    //必填-短信模板Code
+    $request->setTemplateCode($content[0]);
+    //选填-假如模板中存在变量需要替换则为必填(JSON格式)
+    $request->setTemplateParam($content[1]);
+    //选填-发送短信流水号
+    //$request->setOutId("1234");
+
+    //发起访问请求
+    $acsResponse = $acsClient->getAcsResponse($request);
+
+    if ($acsResponse->result === 'OK') {
         return true;
     } else {
-       if($hy_showbug == true){
-           $hy_result = $resp->sub_msg;
-           if(empty($hy_result)){
-               echo "短信验证码发送失败！请检查：\n鸿宇管理中心->短信管理->App Key、App Secret\n商店设置->短信设置->短信签名、对应的模板编号\n阿里开发者控制台->安全中心->IP白名单是否正确？";
-           }else{
-               echo "发送失败：【" . $hy_result . "】";
-           }
-           exit;
-       }
+        if ($hy_showbug == true) {
+            if (empty($acsResponse->Message)) {
+                echo "短信验证码发送失败！请检查：\n鸿宇管理中心->短信管理->Access Key ID、Access Key Secret\n商店设置->短信设置->短信签名、对应的模板编号是否正确？";
+            } else {
+                echo "发送失败：【" . $acsResponse->Message . "】";
+            }
+            exit;
+        }
         return false;
     }
 }
