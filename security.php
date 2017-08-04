@@ -262,7 +262,7 @@ function action_send_mobile_code ()
 	// 生成6位短信验证码
 	$mobile_code = rand_number(6);
     // 短信数组
-    $content = array($GLOBALS['_CFG']['sms_register_tpl'], "{\"code\":\"$mobile_code\",\"product\":\"会员中心\"}",$GLOBALS['_CFG']['sms_sign']);
+    $content = array($GLOBALS['_CFG']['sms_register_tpl'], "{\"number\":\"$mobile_code\"}",$GLOBALS['_CFG']['sms_sign']);
 
 	/* 发送激活验证短信 */
     $result = sendSMS($mobile_phone, $content);
