@@ -158,7 +158,7 @@ if ($_GET['act'] == 'send') {
     $mobile_code = random(6, 1);
 
     // 短信数组
-    $content = array($GLOBALS['_CFG']['sms_register_tpl'], "{\"code\":\"$mobile_code\",\"product\":\"注册\"}",$GLOBALS['_CFG']['sms_sign']);
+    $content = array($GLOBALS['_CFG']['sms_register_tpl'], "{\"number\":\"$mobile_code\"}",$GLOBALS['_CFG']['sms_sign']);
 
 
     if ($_SESSION['mobile']) {

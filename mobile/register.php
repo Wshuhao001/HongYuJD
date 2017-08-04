@@ -208,7 +208,7 @@ function action_send_mobile_code ()
 	$mobile_code = rand_number(6);
 
 	// 短信内容
-    $content = array($_CFG['sms_register_tpl'], "{\"code\":\"$mobile_code\",\"product\":\"注册\"}",$_CFG['sms_sign']);
+    $content = array($_CFG['sms_register_tpl'], "{\"number\":\"$mobile_code\"}",$_CFG['sms_sign']);
 
 	/* 发送激活验证短信 */
     $result = sendSMS($mobile_phone, $content);
