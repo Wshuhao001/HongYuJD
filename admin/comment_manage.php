@@ -333,8 +333,8 @@ function get_comment_list()
     {
         $filter['keywords'] = json_str_iconv($filter['keywords']);
     }
-    $filter['sort_by']      = empty($_REQUEST['sort_by']) ? 'add_time' : addslashes(trim($_REQUEST['sort_by']));
-    $filter['sort_order']   = empty($_REQUEST['sort_order']) ? 'DESC' : addslashes(trim($_REQUEST['sort_order']));
+    $filter['sort_by']      = empty($_REQUEST['sort_by']) ? 'add_time' : trim(htmlspecialchars($_REQUEST['sort_by']));
+    $filter['sort_order']   = empty($_REQUEST['sort_order']) ? 'DESC' : trim(htmlspecialchars($_REQUEST['sort_order']));
 
     $where = (!empty($filter['keywords'])) ? " AND content LIKE '%" . mysql_like_quote($filter['keywords']) . "%' " : '';
 
