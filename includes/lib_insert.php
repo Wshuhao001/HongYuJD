@@ -284,7 +284,8 @@ function insert_customer_service()
 function insert_ads($arr)
 {
     static $static_res = NULL;
-
+    $arr['num'] = intval($arr['num']);
+    $arr['id'] = intval($arr['id']);
     $time = gmtime();
     if (!empty($arr['num']) && $arr['num'] != 1)
     {
@@ -457,9 +458,9 @@ function insert_comments($arr)
     }
     $GLOBALS['smarty']->assign('username',     stripslashes($_SESSION['user_name']));
     $GLOBALS['smarty']->assign('email',        $_SESSION['email']);
-    $GLOBALS['smarty']->assign('comment_type', $arr['type']);
-    $GLOBALS['smarty']->assign('id',           $arr['id']);
-    $cmt = assign_comment($arr['id'],          $arr['type']);
+    $GLOBALS['smarty']->assign('comment_type', addslashes($arr['type']));
+    $GLOBALS['smarty']->assign('id',           intval($arr['id']));
+    $cmt = assign_comment(intval($arr['id']),          addslashes($arr['type']));
     $GLOBALS['smarty']->assign('comments',     $cmt['comments']);
     $GLOBALS['smarty']->assign('pager',        $cmt['pager']);
 

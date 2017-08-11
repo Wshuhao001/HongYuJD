@@ -106,7 +106,7 @@ if ($_REQUEST['act'] == 'install')
 
 if ($_REQUEST['act'] == 'view_install_log')
 {
-    $code = empty($_GET['code']) ? '' : trim($_GET['code']);
+    $code = empty($_GET['code']) ? '' : trim(addslashes($_GET['code']));
     if (empty($code) || file_exists(ROOT_PATH . DATA_DIR . '/integrate_' . $code . '_log.php' ))
     {
         sys_msg($_LANG['lost_intall_log'], 1);

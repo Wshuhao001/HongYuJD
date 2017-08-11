@@ -62,14 +62,14 @@ else
 	/* 初始化分页信息 */
 	$page = isset($_REQUEST['page'])   && intval($_REQUEST['page'])  > 0 ? intval($_REQUEST['page'])  : 1;
 	$size = isset($_CFG['page_size'])  && intval($_CFG['page_size']) > 0 ? intval($_CFG['page_size']) : 10;
-	$brand = isset($_REQUEST['brand']) && $_REQUEST['brand'] > 0 ? $_REQUEST['brand'] : 0;
+	$brand = isset($_REQUEST['brand']) && intval($_REQUEST['brand']) > 0 ? intval($_REQUEST['brand']) : 0;
 	$price_max = isset($_REQUEST['price_max']) && intval($_REQUEST['price_max']) > 0 ? intval($_REQUEST['price_max']) : 0;
 	$price_min = isset($_REQUEST['price_min']) && intval($_REQUEST['price_min']) > 0 ? intval($_REQUEST['price_min']) : 0;
 	$filter = (isset($_REQUEST['filter'])) ? intval($_REQUEST['filter']) : 0;
 	$filter_attr_str = isset($_REQUEST['filter_attr']) ? htmlspecialchars(trim($_REQUEST['filter_attr'])) : '0';
 
 	$filter_attr_str = trim(urldecode($filter_attr_str));
-	$filter_attr_str = preg_match('/^[\d\._]+$/',$filter_attr_str) ? $filter_attr_str : '';  //
+	$filter_attr_str = preg_match('/^[\d\._]+$/',$filter_attr_str) ? $filter_attr_str : '';
 	$filter_attr = empty($filter_attr_str) ? '' : explode('.', $filter_attr_str);
 
 	if(!empty($brand) || !empty($price_max) || !empty($price_min) || !empty($filter_attr)){

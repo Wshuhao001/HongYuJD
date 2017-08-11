@@ -255,7 +255,7 @@
         /* 检查密码是否正确 */
         $sql = "SELECT user_id, user_name, password, action_list, last_login".
         " FROM " . $GLOBALS['ecs']->table('admin_user') .
-        " WHERE user_name = '" . $post['username']. "'";
+        " WHERE user_name = '" . htmlspecialchars($post['username']). "'";
 
         $row = $GLOBALS['db']->getRow($sql);
 

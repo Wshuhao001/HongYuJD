@@ -245,13 +245,18 @@
      */
     function API_UserLogin($post)
     {
+        if (get_magic_quotes_gpc()) {
+            $post['UserId'] = $post['UserId'];
+        }else{
+            $post['UserId'] = addslashes($post['UserId']);
+        }
         $post['username'] = isset($post['UserId']) ? trim($post['UserId']) : '';
         $post['password'] = isset($post['Password']) ? strtolower(trim($post['Password'])) : '';
 
         /* 检查密码是否正确 */
         $sql = "SELECT user_id, user_name, password, action_list, last_login".
         " FROM " . $GLOBALS['ecs']->table('admin_user') .
-        " WHERE user_name = '" . $post['username']. "'";
+        " WHERE user_name = '" . htmlspecialchars($post['username']). "'";
 
         $row = $GLOBALS['db']->getRow($sql);
 
