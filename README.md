@@ -1,4 +1,4 @@
-# HongYuJD-V7.8.7
+# HongYuJD-V7.8.8
 
 鸿宇版小京东
 

@@ -189,7 +189,7 @@
 
   <tr>
 
-    <td>HongYuJD-V7.8.7</td>
+    <td>HongYuJD-V7.8.8</td>
 
     <td>客服 QQ 1527200768</td>
 
