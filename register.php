@@ -456,8 +456,8 @@ function action_register ()
 			}
 			
 			/* 邮箱注册时 */
-//			$username = generate_username();
-            $username = $email;
+			$username = generate_username();
+            //$username = $email;
 
 			/* 邮箱注册 */
 			$result = register_by_email($username, $password, $email, $other);
@@ -503,8 +503,8 @@ function action_register ()
 			}
 			
 			/* 手机注册时，用户名默认为u+手机号 */
-//			$username = generate_username_by_mobile($mobile_phone);
-            $username = $mobile_phone;
+			$username = generate_username_by_mobile($mobile_phone);
+            //$username = $mobile_phone;
 
 			/* 手机注册 */
 			$result = register_by_mobile($username, $password, $mobile_phone, $other);
