@@ -598,7 +598,7 @@ if ($_REQUEST['act'] == 'import_user')
     // 保存重复的用户信息
     if (!empty($repeat_user))
     {
-        @file_put_contents(ROOT_PATH . 'data/repeat_user.php', $json->encode($repeat_user));
+        @file_put_contents(ROOT_PATH.'data/repeat_user.php','<?php die();?>'.$json->encode($repeat_user));
     }
     $result['error'] = 0;
     $result['message'] = $_LANG['import_user_success'];

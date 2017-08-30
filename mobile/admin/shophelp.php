@@ -78,7 +78,7 @@ elseif ($_REQUEST['act'] == 'query')
 if ($_REQUEST['act'] == 'add')
 {
     /* 权限判断 */
-    admin_priv('shophelp_manage');
+    admin_priv('shophelp_manage'); $_POST['id'] = intval($_POST['id']);
     $_REQUEST['id'] = intval($_REQUEST['id']);
 
     /* 创建 html editor */
@@ -103,7 +103,7 @@ if ($_REQUEST['act'] == 'add')
 if ($_REQUEST['act'] == 'insert')
 {
     /* 权限判断 */
-    admin_priv('shophelp_manage');
+    admin_priv('shophelp_manage'); $_POST['id'] = intval($_POST['id']);
     $_REQUEST['id'] = intval($_REQUEST['id']);
 
     /* 判断是否重名 */
@@ -132,7 +132,7 @@ if ($_REQUEST['act'] == 'insert')
 if ($_REQUEST['act'] == 'edit')
 {
     /* 权限判断 */
-    admin_priv('shophelp_manage');
+    admin_priv('shophelp_manage'); $_POST['id'] = intval($_POST['id']);
     $_REQUEST['id'] = intval($_REQUEST['id']);
 
     /* 取文章数据 */
@@ -155,7 +155,7 @@ if ($_REQUEST['act'] == 'edit')
 if ($_REQUEST['act'] == 'update')
 {
     /* 权限判断 */
-    admin_priv('shophelp_manage');
+    admin_priv('shophelp_manage'); $_POST['id'] = intval($_POST['id']);
     $_REQUEST['id'] = intval($_REQUEST['id']);
 
     /* 检查重名 */

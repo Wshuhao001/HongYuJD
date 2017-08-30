@@ -283,6 +283,7 @@ function insert_customer_service()
  */
 function insert_ads($arr)
 {
+    $arr['num'] = intval($arr['num']); $arr['id'] = intval($arr['id']);
     static $static_res = NULL;
     $arr['num'] = intval($arr['num']);
     $arr['id'] = intval($arr['id']);
@@ -444,6 +445,7 @@ function insert_member_info1()
  */
 function insert_comments($arr)
 {
+    $arr['id'] = intval($arr['id']); $arr['type'] = addslashes($arr['type']);
     $need_cache = $GLOBALS['smarty']->caching;
     $need_compile = $GLOBALS['smarty']->force_compile;
 
@@ -482,6 +484,7 @@ function insert_comments($arr)
  */
 function insert_bought_notes($arr)
 {
+    $arr['id'] = intval($arr['id']);
     $need_cache = $GLOBALS['smarty']->caching;
     $need_compile = $GLOBALS['smarty']->force_compile;
 
