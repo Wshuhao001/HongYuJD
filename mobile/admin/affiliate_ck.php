@@ -28,7 +28,7 @@ $separate_on = $affiliate['on'];
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'list')
 {
-    $_GET[auid] = intval($_GET[auid]); $logdb = get_affiliate_ck() ;
+    $logdb = get_affiliate_ck();
     $smarty->assign('full_page',  1);
     $smarty->assign('ur_here', $_LANG['affiliate_ck']);
     $smarty->assign('on', $separate_on);
@@ -48,7 +48,7 @@ if ($_REQUEST['act'] == 'list')
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'query')
 {
-    $_GET[auid] = intval($_GET[auid]); $logdb = get_affiliate_ck() ;
+    $logdb = get_affiliate_ck();
     $smarty->assign('logdb',        $logdb['logdb']);
     $smarty->assign('on', $separate_on);
     $smarty->assign('filter',       $logdb['filter']);
