@@ -43,7 +43,7 @@ if(!is_writable("$files") and !is_writable("$filem")){
                     $config_str .= '$db_user   = "'.$_POST['db_user'].'";';
                     $config_str .= "\n\n".'// database password'."\n";
                     $config_str .= '$db_pass   = "'.$_POST['db_pass'].'";';
-                    $config_str .= "\n\n".'// HongYuJD-V7.8.9 bbs.hongyuvip.com'."\n";
+                    $config_str .= "\n\n".'// HongYuJD-V7.9.0 bbs.hongyuvip.com'."\n";
                     $config_str .= '$prefix    = "ecs_";';
                     $config_str .= "\n\n";
                     $config_str .= '$timezone    = "PRC";';
@@ -86,7 +86,7 @@ if(!is_writable("$files") and !is_writable("$filem")){
                     $config_mobile .= '$db_user   = "'.$_POST['db_user'].'";';
                     $config_mobile .= "\n\n".'// database password'."\n";
                     $config_mobile .= '$db_pass   = "'.$_POST['db_pass'].'";';
-                    $config_mobile .= "\n\n".'// HongYuJD-V7.8.9 bbs.hongyuvip.com'."\n";
+                    $config_mobile .= "\n\n".'// HongYuJD-V7.9.0 bbs.hongyuvip.com'."\n";
                     $config_mobile .= '$prefix    = "ecs_";';
                     $config_mobile .= "\n\n";
                     $config_mobile .= '$timezone    = "PRC";';
@@ -134,7 +134,7 @@ if(!is_writable("$files") and !is_writable("$filem")){
 </head>
 <body style="width: 100%;height: 100%;margin: 0;padding: 0;">
 <div style="background: url(login_dl.jpg) no-repeat;background-size:100% 100%;width: 100%;height: 100%;float: left;position:fixed;">
-    <h1 style="text-align: center;padding: 80px 0 30px 0;border: ">HongYuJD-V7.8.9 多用户商城系统</h1>
+    <h1 style="text-align: center;padding: 80px 0 30px 0;border: ">HongYuJD-V7.9.0 多用户商城系统</h1>
     <h2 style="text-align: center;">鸿宇科技提供唯一售后技术支持</h2>
     <form action="" method="post" style="width: 300px;height: auto;margin: 60px auto 0 auto;padding: 40px;border: 2px solid #B6B6B6;border-radius: 5px;background-color: #F5F5F5" name="install" onSubmit="return check();">
         <a style="font-size: 16px;line-height: 22px;">主机地址：</a><input type="text" name="db_host" value="localhost:3306" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/>
