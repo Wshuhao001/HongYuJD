@@ -1530,7 +1530,7 @@ menu.className=i==cursel?"active":"";
           {* 代码修改 start by www.68hongyuvip.com *}
           <div class="tabmenu">
             <ul class="tab pngFix">
-              <li class="active"> <a href="#">{$lang.label_order}</a> </li>
+              <li class="active"> <a href="user.php?act=order_list">{$lang.label_order}</a> </li>
             </ul>
           </div>
           <div class="blank"></div>
