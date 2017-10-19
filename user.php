@@ -1958,7 +1958,7 @@ function action_order_list ()
 	/* 待发货的订单： */
 	$order_count['await_ship'] = $db->GetOne('SELECT COUNT(*)' . ' FROM ' . $ecs->table('order_info') . " WHERE 1 $ex_where " . order_query_sql('await_ship'));
 	$status['await_ship'] = CS_AWAIT_SHIP;
-	
+	var_dump($order_count['await_ship']);
 	/* 待付款的订单： */
 	$order_count['await_pay'] = $db->GetOne('SELECT COUNT(*)' . ' FROM ' . $ecs->table('order_info') . " WHERE 1 $ex_where " . order_query_sql('await_pay'));
 	$status['await_pay'] = CS_AWAIT_PAY;
@@ -2011,7 +2011,7 @@ function action_order_list ()
     // 待发货
     else if ($composite_status == CS_AWAIT_SHIP)
     {
-    	$record_count = $order_count['await_pay'];
+    	$record_count = $order_count['await_ship'];
     }
     // 已完成
     else if ($composite_status == CS_FINISHED) 
