@@ -38,6 +38,7 @@ if ($_REQUEST['act'] == 'list')
     $smarty->assign('page_count',   $logdb['page_count']);
     if (!empty($_GET['auid']))
     {
+        $_GET['auid'] = intval($_GET['auid']);
         $smarty->assign('action_link',  array('text' => $_LANG['back_note'], 'href'=>"users.php?act=edit&id=$_GET[auid]"));
     }
     assign_query_info();
