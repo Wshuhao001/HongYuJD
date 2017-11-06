@@ -46,7 +46,7 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['is_online']  = '1';
 
     /* 作者 */
-    $modules[$i]['author']  = '鸿宇QQ交流群 : 90664526';
+    $modules[$i]['author']  = '鸿宇QQ : 1527200768';
 
     /* 网址 */
     $modules[$i]['website'] = 'http://bbs.hongyuvip.com';

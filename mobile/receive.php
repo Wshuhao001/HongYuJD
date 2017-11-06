@@ -44,7 +44,7 @@ elseif ($order['consignee'] != $consignee)
 }
 else
 {
-    /* 鸿宇科技修复 hongyuvip.com QQ交流群:90664526 by:Shadow & 鸿宇 start */
+    /* 鸿宇科技修复 hongyuvip.com QQ:1527200768 by:Shadow & 鸿宇 start */
 
     $act = !empty($_REQUEST['act']) ? rawurldecode($_REQUEST['con']) : 'confirm'; // 验证码
     if ($act == 'confirm')
@@ -61,7 +61,7 @@ else
         $msg = $_LANG['act_ok'];
     }
 
-    /* 鸿宇科技修复 hongyuvip.com QQ交流群:90664526 by:Shadow & 鸿宇 end */
+    /* 鸿宇科技修复 hongyuvip.com QQ:1527200768 by:Shadow & 鸿宇 end */
 
 //    /* 修改订单发货状态为“确认收货” */
 //    $sql = "UPDATE " . $ecs->table('order_info') . " SET shipping_status = '" . SS_RECEIVED . "' WHERE order_id = '$order_id'";

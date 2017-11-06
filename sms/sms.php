@@ -203,7 +203,7 @@ if ($_GET['act'] == 'send') {
 
 }
 
-/* 鸿宇独家修复 hongyuvip.com QQ交流群:90664526 by:Shadow & 鸿宇 start */
+/* 鸿宇独家修复 hongyuvip.com QQ:1527200768 by:Shadow & 鸿宇 start */
 
 function sendSMS($mobile_phone, $content)
 {
@@ -259,7 +259,7 @@ function sendSMS($mobile_phone, $content)
     }
 }
 
-/* 鸿宇科技修复 hongyuvip.com QQ交流群:90664526 by:Shadow & 鸿宇 end */
+/* 鸿宇科技修复 hongyuvip.com QQ:1527200768 by:Shadow & 鸿宇 end */
 
 function checkSMS($mobile, $mobile_code)
 {
