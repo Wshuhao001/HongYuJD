@@ -8,7 +8,7 @@
     <li>
       <i>2</i>直接拨打电话
       <p class="wei_shop">如果在您不方便上网的时候</p>
-      <p class="phone">400-888-8888</p>
+      <p class="phone">{$service_phone}</p>
     </li>
     <li>
       <i>3</i>支持微商城下订单
