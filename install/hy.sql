@@ -9020,14 +9020,14 @@ INSERT INTO `ecs_shop_config` VALUES ('104', '1', 'shop_keywords', 'text', '', '
 INSERT INTO `ecs_shop_config` VALUES ('105', '1', 'shop_country', 'manual', '', '', '1', '1');
 INSERT INTO `ecs_shop_config` VALUES ('106', '1', 'shop_province', 'manual', '', '', '8', '1');
 INSERT INTO `ecs_shop_config` VALUES ('107', '1', 'shop_city', 'manual', '', '', '111', '1');
-INSERT INTO `ecs_shop_config` VALUES ('108', '1', 'shop_address', 'text', '', '', '中国贵州省贵阳市', '1');
+INSERT INTO `ecs_shop_config` VALUES ('108', '1', 'shop_address', 'text', '', '', '中国北京市', '1');
 INSERT INTO `ecs_shop_config` VALUES ('109', '1', 'qq', 'text', '', '', '1527200768', '1');
 INSERT INTO `ecs_shop_config` VALUES ('110', '1', 'ww', 'text', '', '', '', '1');
 INSERT INTO `ecs_shop_config` VALUES ('111', '1', 'skype', 'text', '', '', '', '1');
 INSERT INTO `ecs_shop_config` VALUES ('112', '1', 'ym', 'text', '', '', '', '1');
 INSERT INTO `ecs_shop_config` VALUES ('113', '1', 'msn', 'text', '', '', '', '1');
 INSERT INTO `ecs_shop_config` VALUES ('114', '1', 'service_email', 'text', '', '', '', '1');
-INSERT INTO `ecs_shop_config` VALUES ('115', '1', 'service_phone', 'text', '', '', '', '1');
+INSERT INTO `ecs_shop_config` VALUES ('115', '1', 'service_phone', 'text', '', '', '400-000-0000', '1');
 INSERT INTO `ecs_shop_config` VALUES ('116', '1', 'shop_closed', 'select', '0,1', '', '0', '1');
 INSERT INTO `ecs_shop_config` VALUES ('117', '1', 'close_comment', 'textarea', '', '', '', '1');
 INSERT INTO `ecs_shop_config` VALUES ('118', '1', 'shop_logo', 'hidden', '', '../themes/{$template}/images/', '', '1');
