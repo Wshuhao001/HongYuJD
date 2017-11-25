@@ -71,7 +71,7 @@ elseif($_REQUEST['act'] == 'clear')
                 'member_price',
                 'order_action', 'order_goods', 'order_info',
                 'pack', 'package_goods', 'payment', 'pay_log', 'products',
-                'shipping', 'shipping_area', 'snatch_log', 'stats',
+                'shaidan', 'shipping', 'shipping_area', 'snatch_log', 'stats',
                 'supplier', 'supplier_admin_user', 'supplier_article', 'supplier_article_cat', 'supplier_cat_recommend', 'supplier_goods_cat', 'supplier_guanzhu',
                 'supplier_rebate', 'supplier_rebate_log', 'supplier_shop_config', 'supplier_street', 'supplier_tag', 'supplier_tag_map', 'suppliers',
                 'tag', 'takegoods', 'takegoods_goods', 'takegoods_order', 'takegoods_type', 'takegoods_type_goods',
