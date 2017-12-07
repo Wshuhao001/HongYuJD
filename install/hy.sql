@@ -63,11 +63,11 @@ CREATE TABLE `ecs_ad` (
 -- ----------------------------
 -- Records of ecs_ad
 -- ----------------------------
-INSERT INTO `ecs_ad` VALUES ('1', '1', '0', '首页专题广告1', 'http://www.*.com/topic.php?topic_id=1', '1437443598413319761.jpg', '1476691200', '1602921600', '', '', '', '17', '1');
-INSERT INTO `ecs_ad` VALUES ('2', '2', '0', '首页专题广告2', 'http://www.*.com/topic.php?topic_id=2', '1437443618115141919.jpg', '1476691200', '1602921600', '', '', '', '25', '1');
-INSERT INTO `ecs_ad` VALUES ('3', '3', '0', '首页专题广告3', 'http://www.*.com/topic.php?topic_id=3', '1437443639216982079.jpg', '1476691200', '1602921600', '', '', '', '8', '1');
-INSERT INTO `ecs_ad` VALUES ('4', '4', '0', '首页专题广告4', 'http://www.*.com/topic.php?topic_id=4', '1437443671970687539.jpg', '1476691200', '1602921600', '', '', '', '7', '1');
-INSERT INTO `ecs_ad` VALUES ('5', '5', '0', '首页专题广告5', 'http://www.*.com/topic.php?topic_id=5', '1437443689808458163.jpg', '1476691200', '1602921600', '', '', '', '5', '1');
+INSERT INTO `ecs_ad` VALUES ('1', '1', '0', '首页专题广告1', 'http://www.hongyuvip.com/topic.php?topic_id=1', '1437443598413319761.jpg', '1476691200', '1602921600', '', '', '', '17', '1');
+INSERT INTO `ecs_ad` VALUES ('2', '2', '0', '首页专题广告2', 'http://www.hongyuvip.com/topic.php?topic_id=2', '1437443618115141919.jpg', '1476691200', '1602921600', '', '', '', '25', '1');
+INSERT INTO `ecs_ad` VALUES ('3', '3', '0', '首页专题广告3', 'http://www.hongyuvip.com/topic.php?topic_id=3', '1437443639216982079.jpg', '1476691200', '1602921600', '', '', '', '8', '1');
+INSERT INTO `ecs_ad` VALUES ('4', '4', '0', '首页专题广告4', 'http://www.hongyuvip.com/topic.php?topic_id=4', '1437443671970687539.jpg', '1476691200', '1602921600', '', '', '', '7', '1');
+INSERT INTO `ecs_ad` VALUES ('5', '5', '0', '首页专题广告5', 'http://www.hongyuvip.com/topic.php?topic_id=5', '1437443689808458163.jpg', '1476691200', '1602921600', '', '', '', '5', '1');
 INSERT INTO `ecs_ad` VALUES ('6', '6', '0', '首页-店铺-左侧广告', '', '1437443964590321726.jpg', '1476691200', '1602921600', '', '', '', '9', '1');
 INSERT INTO `ecs_ad` VALUES ('7', '7', '0', '首页-店铺-右侧广告', '', '1437443987264556143.jpg', '1476691200', '1602921600', '', '', '', '4', '1');
 INSERT INTO `ecs_ad` VALUES ('8', '8', '0', '首页幻灯片-小图下1', '', '1437497920196427586.jpg', '1476691200', '1602921600', '', '', '', '8', '1');
