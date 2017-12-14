@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 快钱神州行支付插件
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -74,7 +74,7 @@ class shenzhou
      * @return void
      */
     
-	/* 代码修改_start  By bbs.hongyuvip.com */
+	/* 代码修改_start  By www.hongyuvip.com */
 
     function __construct()
     {
@@ -85,7 +85,7 @@ class shenzhou
     {
     }
 
-	/* 代码修改_end  By bbs.hongyuvip.com */
+	/* 代码修改_end  By www.hongyuvip.com */
 
    /**
      * 生成支付代码

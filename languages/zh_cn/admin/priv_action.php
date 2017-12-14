@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 权限名称语言文件
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -114,9 +114,9 @@ $_LANG['sale_order_stats'] = '订单销售统计';
 $_LANG['client_flow_stats'] = '客户流量统计';
 $_LANG['delivery_view'] = '查看发货单';
 $_LANG['back_view'] = '查看退货单';
-/* 增值税发票_添加_START_bbs.hongyuvip.com */
+/* 增值税发票_添加_START_www.hongyuvip.com */
 $_LANG['invoice_manage'] = '发票管理';
-/* 增值税发票_添加_END_bbs.hongyuvip.com */
+/* 增值税发票_添加_END_www.hongyuvip.com */
 
 // 促销管理
 $_LANG['snatch_manage'] = '夺宝奇兵';

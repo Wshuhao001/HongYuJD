@@ -31,7 +31,7 @@
   <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 </ul>
 <ul style="padding:0; margin: 0; list-style-type:none; color: #CC0000;">
- <!-- <script type="text/javascript" src="http://bbs.hongyuvip.com/notice.php?v=1&n=8&f=ul"></script>-->
+ <!-- <script type="text/javascript" src="http://www.hongyuvip.com/notice.php?v=1&n=8&f=ul"></script>-->
 </ul>
 <!-- directory install end -->
 <!-- start personal message -->

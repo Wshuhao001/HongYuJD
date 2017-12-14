@@ -4,12 +4,12 @@
  * 鸿宇多用户商城 定期自动清除缓存
  * ===========================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
  * ==========================================================
- * $Author: bbs.hongyuvip.com $
+ * $Author: www.hongyuvip.com $
  * $Id: ipdel.php 17217 2016-01-19 06:29:08Z Shadow & 鸿宇
  */
 
@@ -39,7 +39,7 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['author']  = 'ECSHOP开发中心';
 
     /* 网址 */
-    $modules[$i]['website'] = 'http://bbs.hongyuvip.com';
+    $modules[$i]['website'] = 'http://www.hongyuvip.com';
 
     /* 版本号 */
     $modules[$i]['version'] = '1.0.0';

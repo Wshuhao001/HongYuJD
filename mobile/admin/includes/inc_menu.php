@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 管理中心菜单数组
  * ============================================================================
  * 版权所有 2015-2018 鸿宇多用户商城科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com;
+ * 网站地址: http://www.hongyuvip.com;
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -131,12 +131,12 @@ $modules['13_backup']['03_db_optimize']             = 'database.php?act=optimize
 $modules['13_backup']['04_sql_query']               = 'sql.php?act=main';
 $modules['13_backup']['convert']                    = 'convert.php?act=main';
 
-$modules['14_school']['01_school']       = 'http://bbs.hongyuvip.com/';
+$modules['14_school']['01_school']       = 'http://www.hongyuvip.com/';
 $modules['14_sms']['03_sms_send']                   = 'sms.php?act=display_send_ui';
 $modules['14_sms']['04_sms_sign']                   = 'sms.php?act=sms_sign';
-$modules['14_school']['02_school_a']     = 'http://bbs.hongyuvip.com/';
-$modules['14_school']['03_school_b']      = 'http://bbs.hongyuvip.com/';
-$modules['14_school']['04_school_c']      = 'http://bbs.hongyuvip.com/';
+$modules['14_school']['02_school_a']     = 'http://www.hongyuvip.com/';
+$modules['14_school']['03_school_b']      = 'http://www.hongyuvip.com/';
+$modules['14_school']['04_school_c']      = 'http://www.hongyuvip.com/';
 
 $modules['15_rec']['affiliate']                     = 'affiliate.php?act=list';
 $modules['15_rec']['affiliate_ck']                  = 'affiliate_ck.php?act=list';

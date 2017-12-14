@@ -180,14 +180,14 @@ function userEdit()
   var reg = null;
   var passwd_answer = frm.elements['passwd_answer'] ? Utils.trim(frm.elements['passwd_answer'].value) : '';
   var sel_question =  frm.elements['sel_question'] ? Utils.trim(frm.elements['sel_question'].value) : '';
-  /*代码增加2014-12-23 by bbs.hongyuvip.com  _star */
+  /*代码增加2014-12-23 by www.hongyuvip.com  _star */
   var username = frm.elements['username'].value;
   
   if(username.length == 0)
   {
 	  msg += '用户名不能为空' + '\n'; 
   }
-  /*代码增加2014-12-23 by bbs.hongyuvip.com  _end */
+  /*代码增加2014-12-23 by www.hongyuvip.com  _end */
   if (email.length == 0)
   {
     msg += email_empty + '\n';

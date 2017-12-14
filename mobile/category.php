@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 商品分类
  * ============================================================================
  * 版权所有 2015-2018 鸿宇多用户商城科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com;
+ * 网站地址: http://www.hongyuvip.com;
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -58,7 +58,7 @@ $default_sort_order_method = $_CFG['sort_order_method'] == '0' ? 'DESC' : 'ASC';
 $default_sort_order_type = $_CFG['sort_order_type'] == '0' ? 'goods_id' : ($_CFG['sort_order_type'] == '1' ? 'shop_price' : 'last_update');
 
 $sort = (isset($_REQUEST['sort']) && in_array(trim(strtolower($_REQUEST['sort'])), array('goods_id', 'shop_price', 'last_update', 'salenum'))) ? trim($_REQUEST['sort']) : $default_sort_order_type;
-/* 代码增加_start  By  bbs.hongyuvip.com */
+/* 代码增加_start  By  www.hongyuvip.com */
 $order = (isset($_REQUEST['order']) && in_array(trim(strtoupper($_REQUEST['order'])), array('ASC', 'DESC'))) ? trim($_REQUEST['order']) : $default_sort_order_method;
 $display = (isset($_REQUEST['display']) && in_array(trim(strtolower($_REQUEST['display'])), array('list', 'grid', 'text'))) ? trim($_REQUEST['display']) : (isset($_COOKIE['ECS']['display']) ? $_COOKIE['ECS']['display'] : $default_display_type);
 $display = in_array($display, array('list', 'grid', 'text')) ? $display : 'text';
@@ -473,7 +473,7 @@ function category_get_goods($children, $other_has, $other_youhuo, $brand, $min, 
             'LEFT JOIN ' . $GLOBALS['ecs']->table('member_price') . ' AS mp ' .
             "ON mp.goods_id = g.goods_id AND mp.user_rank = '$_SESSION[user_rank]' " .
             "WHERE $where $ext ORDER BY $sort $order $limit";
-    /* 代码增加_start  By  bbs.hongyuvip.com */
+    /* 代码增加_start  By  www.hongyuvip.com */
     if ($sort == 'salenum') {
         $sql = 'SELECT SUM(o.goods_number) as salenum, g.goods_id, g.goods_name, g.goods_name_style, g.market_price, g.is_new, g.is_best, g.is_hot, g.shop_price AS org_price, ' .
                 "IFNULL(mp.user_price, g.shop_price * '$_SESSION[discount]') AS shop_price, g.promote_price, g.goods_type, " .
@@ -482,7 +482,7 @@ function category_get_goods($children, $other_has, $other_youhuo, $brand, $min, 
                 'LEFT JOIN ' . $GLOBALS['ecs']->table('member_price') . ' AS mp ' .
                 "ON mp.goods_id = g.goods_id AND mp.user_rank = '$_SESSION[user_rank]' " . "LEFT JOIN " . $GLOBALS['ecs']->table('order_goods') . " as o ON o.goods_id = g.goods_id " . "WHERE $where $ext group by g.goods_id ORDER BY $sort $order $limit";
     }
-    /* 代码增加_end  By  bbs.hongyuvip.com */
+    /* 代码增加_end  By  www.hongyuvip.com */
 
     if (empty($limit)) {
         $res = $GLOBALS['db']->selectLimit($sql, $size, ($page - 1) * $size);

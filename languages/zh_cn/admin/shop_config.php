@@ -3,7 +3,7 @@
  * 鸿宇多用户商城 管理中心商店设置语言文件
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -570,18 +570,18 @@ $_LANG['cfg_name']['sms_return_goods_tpl'] = '';
 
 
 
-/*fulltext_search_add_START_bbs.hongyuvip.com*/
+/*fulltext_search_add_START_www.hongyuvip.com*/
 $_LANG['cfg_name']['fulltext_search'] = '全文搜索引擎';
 $_LANG['cfg_range']['fulltext_search']['0'] = '关闭';
 $_LANG['cfg_range']['fulltext_search']['1'] = '开启';
-/*fulltext_search_add_END_bbs.hongyuvip.com*/
+/*fulltext_search_add_END_www.hongyuvip.com*/
 
-/* 代码增加_注册红包start  By  bbs.hongyuvip.com */
+/* 代码增加_注册红包start  By  www.hongyuvip.com */
 $_LANG['cfg_name']['bonus_reg_rand'] = '随机发放注册红包';
 $_LANG['cfg_desc']['bonus_reg_rand'] = '说明：红包发放类型为【按注册用户发放】时该设置才有效';
 $_LANG['cfg_range']['bonus_reg_rand'][0] = '关闭';
 $_LANG['cfg_range']['bonus_reg_rand'][1] = '打开';
-/* 代码增加_注册红包end  By  bbs.hongyuvip.com */
+/* 代码增加_注册红包end  By  www.hongyuvip.com */
 
 $_LANG['cfg_name']['shop_opint'] = '店铺坐标';
 ?>

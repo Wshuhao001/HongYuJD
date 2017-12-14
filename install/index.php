@@ -5,7 +5,7 @@
  * User: Shadow
  * Date: 2016-07-18 0008
  * Time: 18:18
- * Http: bbs.hongyuvip.com
+ * Http: www.hongyuvip.com
  */
 
 header("content-Type: text/html; charset=Utf-8"); //设置字符的编码是utp-8
@@ -43,7 +43,7 @@ if(!is_writable("$files") and !is_writable("$filem")){
                     $config_str .= '$db_user   = "'.$_POST['db_user'].'";';
                     $config_str .= "\n\n".'// database password'."\n";
                     $config_str .= '$db_pass   = "'.$_POST['db_pass'].'";';
-                    $config_str .= "\n\n".'// HongYuJD-V7.9.3 bbs.hongyuvip.com'."\n";
+                    $config_str .= "\n\n".'// HongYuJD-V7.9.3 www.hongyuvip.com'."\n";
                     $config_str .= '$prefix    = "ecs_";';
                     $config_str .= "\n\n";
                     $config_str .= '$timezone    = "PRC";';
@@ -86,7 +86,7 @@ if(!is_writable("$files") and !is_writable("$filem")){
                     $config_mobile .= '$db_user   = "'.$_POST['db_user'].'";';
                     $config_mobile .= "\n\n".'// database password'."\n";
                     $config_mobile .= '$db_pass   = "'.$_POST['db_pass'].'";';
-                    $config_mobile .= "\n\n".'// HongYuJD-V7.9.3 bbs.hongyuvip.com'."\n";
+                    $config_mobile .= "\n\n".'// HongYuJD-V7.9.3 www.hongyuvip.com'."\n";
                     $config_mobile .= '$prefix    = "ecs_";';
                     $config_mobile .= "\n\n";
                     $config_mobile .= '$timezone    = "PRC";';
@@ -141,7 +141,7 @@ if(!is_writable("$files") and !is_writable("$filem")){
         <a style="font-size: 16px;line-height: 22px;">数据库名：</a><input type="text" name="db_name" value="" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/>
         <a style="font-size: 16px;line-height: 22px;">用 户 名：</a><input type="text" name="db_user" value="" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/>
         <a style="font-size: 16px;line-height: 22px;">密　　码：</a><input type="password" name="db_pass" value="" style="width: 200px;height: 22px;padding: 0 5px;float: right"/><br/><br/><br/>
-        <a href="http://bbs.hongyuvip.com/?/article/25" target="_blank" style="font-size: 16px;color: #FFF;text-decoration: none;padding: 5px 15px;background: red;border-radius: 5px;">安装教程</a><button type="submit" name="install" style="font-size: 16px;float: right;cursor: pointer;">开始安装</button>
+        <a href="http://www.hongyuvip.com/?/article/25" target="_blank" style="font-size: 16px;color: #FFF;text-decoration: none;padding: 5px 15px;background: red;border-radius: 5px;">安装教程</a><button type="submit" name="install" style="font-size: 16px;float: right;cursor: pointer;">开始安装</button>
     </form>
     <div style="width: 100%;line-height: 35px;font-size: 12px;color: #585858;text-align: center;position:fixed;bottom:0;"><a href="http://hongyuvip.com" target="_blank" style="text-decoration: none;color: #585858;">Copyright © 2015 - <?php echo date('Y')?> 鸿宇科技 版权所有 盗版必究 本程序仅供学习交流使用，请勿用于商业用途。</a></div>
 </div>

@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 管理中心配送方式管理语言文件
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -19,9 +19,9 @@ $_LANG['shipping_desc'] = '配送方式描述';
 $_LANG['shipping_author'] = '插件作者';
 $_LANG['insure'] = '保价费用';
 $_LANG['support_cod'] = '货到付款？';
-/* 代码增加_start   By bbs.hongyuvip.com */
+/* 代码增加_start   By www.hongyuvip.com */
 $_LANG['support_pickup'] = '门店自提？';
-/* 代码增加_send   By bbs.hongyuvip.com */
+/* 代码增加_send   By www.hongyuvip.com */
 $_LANG['shipping_area'] = '设置区域';
 $_LANG['shipping_pups'] = '自提点管理';
 $_LANG['shipping_print_edit'] = '编辑打印模板';

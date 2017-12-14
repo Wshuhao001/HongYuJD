@@ -4,7 +4,7 @@
  * ECSHOP 微信jsapi支付插件 for ecmobile
  * ============================================================================
  * *
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -53,7 +53,7 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['author']  = '鸿宇QQ : 1527200768';
 
     /* 网址 */
-    $modules[$i]['website'] = 'http://bbs.hongyuvip.com';
+    $modules[$i]['website'] = 'http://www.hongyuvip.com';
 
     /* 版本号 */
     $modules[$i]['version'] = '2.0.4';

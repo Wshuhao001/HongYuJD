@@ -2112,11 +2112,11 @@ $(document).ready(function() {
     <div class="footer-info clearfix">
       <div class="info-text">
               <p class="nav_bottom">
-                    <a href="http://bbs.hongyuvip.com/" target="_blank">关于我们</a><em >|</em>
-               <a href="http://bbs.hongyuvip.com/article-4.html" target="_blank">联系我们</a><em >|</em>
+                    <a href="http://www.hongyuvip.com/" target="_blank">关于我们</a><em >|</em>
+               <a href="http://www.hongyuvip.com/article-4.html" target="_blank">联系我们</a><em >|</em>
                <a href="apply_index.php" >商家入驻</a><em >|</em>
                <a href="#" >友情链接</a><em >|</em>
-               <a href="http://bbs.hongyuvip.com/sitemap.xml" >站点地图</a><em >|</em>
+               <a href="http://www.hongyuvip.com/sitemap.xml" >站点地图</a><em >|</em>
                <a href="#" >手机商城</a><em >|</em>
                <a href="#" >销售联盟</a><em >|</em>
                <a href="#" >商城社区</a><em >|</em>

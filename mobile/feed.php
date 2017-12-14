@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 RSS Feed 生成程序
  * ============================================================================
  * 版权所有 2015-2018 鸿宇多用户商城科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com;
+ * 网站地址: http://www.hongyuvip.com;
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -33,7 +33,7 @@ $brd = isset($_REQUEST['brand']) ? ' AND g.brand_id=' . intval($_REQUEST['brand'
 $uri = $ecs->url();
 
 $rss = new RSSBuilder(EC_CHARSET, $uri, htmlspecialchars($_CFG['shop_name']), htmlspecialchars($_CFG['shop_desc']), $uri . 'animated_favicon.gif');
-$rss->addDCdata('', 'http://bbs.hongyuvip.com', date('r'));
+$rss->addDCdata('', 'http://www.hongyuvip.com', date('r'));
 
 if (isset($_REQUEST['type']))
 {

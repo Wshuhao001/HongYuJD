@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 管理中心商店设置
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -29,7 +29,7 @@ else
 
 $sess_id = $GLOBALS['sess']->get_session_id();
 
-$auth = local_mktime(); //代码修改  By bbs.hongyuvip.com
+$auth = local_mktime(); //代码修改  By www.hongyuvip.com
 $ac = md5($certi_id.'SHOPEX_SMS'.$auth);
 $url = 'http://service.shopex.cn/sms/index.php?certificate_id='.$certi_id.'&sess_id='.$sess_id.'&auth='.$auth.'&ac='.$ac;
 
@@ -211,13 +211,13 @@ elseif ($_REQUEST['act'] == 'post')
             $_POST['invoice_rate'][$key] = $rate;
         }
 	
-		/*增值税发票_更改_START_bbs.hongyuvip.com*/
+		/*增值税发票_更改_START_www.hongyuvip.com*/
         $invoice = array(
             'type' => $_POST['invoice_type'],
             'rate' => $_POST['invoice_rate'],
             'enable' => $_POST['invoice_enable']
         );
-		/*增值税发票_更改_END_bbs.hongyuvip.com*/
+		/*增值税发票_更改_END_www.hongyuvip.com*/
 		
         $sql = "UPDATE " . $ecs->table('shop_config') . " SET value = '" . serialize($invoice) . "' WHERE code = 'invoice_type'";
         $db->query($sql);

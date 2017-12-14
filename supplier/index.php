@@ -3,7 +3,7 @@
  * 鸿宇多用户商城 控制台首页
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -175,7 +175,7 @@ elseif ($_REQUEST['act'] == 'main')
 	$smarty->assign('supplier_article',  $supplier_article);
     $smarty->assign('supplier_notice',  nl2br($_CFG['supplier_notice']));
     
-    /*后台管理起始页_添加_START_bbs.hongyuvip.com*/
+    /*后台管理起始页_添加_START_www.hongyuvip.com*/
     $today_start=mktime(0,0,0,date('m'),date('d'),date('Y'));
     $today_end=mktime(0,0,0,date('m'),date('d')+1,date('Y'))-1;
     $month_start=mktime(0,0,0,date('m'),1,date('Y'));
@@ -444,7 +444,7 @@ elseif ($_REQUEST['act'] == 'main')
     $sales_option['yAxis'] = $sales_yAxis;
     $sales_option['series'] = $sales_series;
     $smarty->assign('sales_option',json_encode($sales_option));
-    /*后台管理起始页_添加_END_bbs.hongyuvip.com*/
+    /*后台管理起始页_添加_END_www.hongyuvip.com*/
     $smarty->display('start.htm');
 }
 

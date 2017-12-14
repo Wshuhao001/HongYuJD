@@ -6,7 +6,7 @@
 
 唯一官网：http://www.hongyuvip.com/
 
-唯一论坛：http://bbs.hongyuvip.com/
+唯一论坛：http://www.hongyuvip.com/
 
 淘宝店铺：http://hongyuweb.taobao.com/
 

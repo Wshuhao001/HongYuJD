@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 管理中心模版相关公用函数库
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -46,20 +46,20 @@ $template_files = array(
     'auction_list.dwt',
     'auction.dwt',
     'message_board.dwt',
-	'takegoods',   //代码增加   By  bbs.hongyuvip.com
+	'takegoods',   //代码增加   By  www.hongyuvip.com
     'exchange_list.dwt',
 );
 
 /* 每个模板允许设置的库项目 */
 $page_libs = array(
-	/* 代码增加_start  By  bbs.hongyuvip.com */
+	/* 代码增加_start  By  www.hongyuvip.com */
    'takegoods' => array(
         '/library/ur_here.lbi' => 0,
         '/library/cart.lbi' => 0,
         '/library/category_tree.lbi' => 0,
         '/library/history.lbi' => 0,
     ),
-	/* 代码增加_end  By  bbs.hongyuvip.com */
+	/* 代码增加_end  By  www.hongyuvip.com */
     'article' => array(
         '/library/ur_here.lbi' => 0,
         '/library/search_form.lbi' => 0,

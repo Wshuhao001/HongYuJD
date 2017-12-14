@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 管理中心支付方式管理语言文件
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -21,9 +21,9 @@ $_LANG['short_pay_fee'] = '费用';
 $_LANG['payment_author'] = '插件作者';
 $_LANG['payment_is_cod'] = '货到付款？';
 $_LANG['payment_is_online'] = '在线支付？';
-/* 代码增加_start   By bbs.hongyuvip.com */
+/* 代码增加_start   By www.hongyuvip.com */
 $_LANG['payment_is_pickup'] = '门店自提？';
-/* 代码增加_send   By bbs.hongyuvip.com */
+/* 代码增加_send   By www.hongyuvip.com */
 $_LANG['name_is_null'] = '您没有输入支付方式名称！';
 $_LANG['name_exists'] = '该支付方式名称已存在！';
 

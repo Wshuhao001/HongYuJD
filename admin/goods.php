@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 商品管理程序
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -17,7 +17,7 @@ define('IN_ECS', true);
 
 require(dirname(__FILE__) . '/includes/init.php');
 require_once(ROOT_PATH . '/' . ADMIN_PATH . '/includes/lib_goods.php');
-require_once(ROOT_PATH . '/' . ADMIN_PATH. "/nusoap/nusoap.php");   //代码增加  By  bbs.hongyuvip.com
+require_once(ROOT_PATH . '/' . ADMIN_PATH. "/nusoap/nusoap.php");   //代码增加  By  www.hongyuvip.com
 include_once(ROOT_PATH . '/includes/cls_image.php');
 $image = new cls_image($_CFG['bgcolor']);
 $exc = new exchange($ecs->table('goods'), $db, 'goods_id', 'goods_name');
@@ -53,7 +53,7 @@ if ($_REQUEST['act'] == 'list' || $_REQUEST['act'] == 'trash')
     unset($suppliers_list_name, $suppliers_exists);
     
     if(intval($_REQUEST['supp'])>0){
-		/* 代码增加_start  By bbs.hongyuvip.com */
+		/* 代码增加_start  By www.hongyuvip.com */
 		$supplier_list_name=array();
 		$sql_supplier = "select supplier_id, supplier_name FROM " . $GLOBALS['ecs']->table("supplier") . " where status='1' order by supplier_id ";
 		$res_supplier = $db->query($sql_supplier);
@@ -66,7 +66,7 @@ if ($_REQUEST['act'] == 'list' || $_REQUEST['act'] == 'trash')
 		$smarty->assign('suppliers_list_name', $supplier_list_name);
 		$supplier_status_list =array('0'=>'未审核', '1'=>'审核通过', '-1'=>'审核未通过');
 		$smarty->assign('supplier_status_list', $supplier_status_list);
-		/* 代码增加_end  By bbs.hongyuvip.com */
+		/* 代码增加_end  By www.hongyuvip.com */
     }else{
     	// 入驻商商品列表不显示添加新商品
     	$action_link = ($_REQUEST['act'] == 'list') ? add_link($code) : array('href' => 'goods.php?act=list', 'text' => $_LANG['01_goods_list']);
@@ -118,15 +118,15 @@ if ($_REQUEST['act'] == 'list' || $_REQUEST['act'] == 'trash')
 
 elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit' || $_REQUEST['act'] == 'copy')
 {
-     /* 修改 by bbs.hongyuvip.com 百度编辑器 begin */
+     /* 修改 by www.hongyuvip.com 百度编辑器 begin */
     //include_once(ROOT_PATH . 'includes/fckeditor/fckeditor.php'); // 包含 html editor 类文件
-    /* 修改 by bbs.hongyuvip.com 百度编辑器 end */
+    /* 修改 by www.hongyuvip.com 百度编辑器 end */
 
-	// 代码增加_start_derek20150129admin_goods  bbs.hongyuvip.com
+	// 代码增加_start_derek20150129admin_goods  www.hongyuvip.com
 
 	include_once(ROOT_PATH . '/includes/Pinyin.php');
 
-	// 代码增加_end_derek20150129admin_goods  bbs.hongyuvip.com
+	// 代码增加_end_derek20150129admin_goods  www.hongyuvip.com
 
     $is_add = $_REQUEST['act'] == 'add'; // 添加还是编辑的标识
     $is_copy = $_REQUEST['act'] == 'copy'; //是否复制
@@ -243,13 +243,13 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit' || $_REQUEST['ac
         $sql = "SELECT * FROM " . $ecs->table('goods') . " WHERE goods_id = '$_REQUEST[goods_id]'";
         $goods = $db->getRow($sql);
 
-		// 代码增加_start_derek20150129admin_goods  bbs.hongyuvip.com
+		// 代码增加_start_derek20150129admin_goods  www.hongyuvip.com
 		
 		$r_b_id = $db->getOne("select brand_name from ".$ecs->table('brand')." where brand_id=".$goods['brand_id']);
 		$goods['brand_name'] = $r_b_id;
 		$smarty->assign('brand_name_val',$goods['brand_name']);
 		
-		// 代码增加_end_derek20150129admin_goods  bbs.hongyuvip.com
+		// 代码增加_end_derek20150129admin_goods  www.hongyuvip.com
 
         /* 虚拟卡商品复制时, 将其库存置为0*/
         if ($is_copy && $code != '')
@@ -448,7 +448,7 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit' || $_REQUEST['ac
     $goods_name_style = explode('+', empty($goods['goods_name_style']) ? '+' : $goods['goods_name_style']);
 
     /* 创建 html editor */
-   create_html_editor('goods_desc', htmlspecialchars($goods['goods_desc'])); /* 修改 by bbs.hongyuvip.com 百度编辑器 */
+   create_html_editor('goods_desc', htmlspecialchars($goods['goods_desc'])); /* 修改 by www.hongyuvip.com 百度编辑器 */
 
     /* 模板赋值 */
     $smarty->assign('code',    $code);
@@ -466,11 +466,11 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit' || $_REQUEST['ac
 	$smarty->assign('goods_cat_name', $cat_list[$goods['cat_id']]['cat_name']);
 	$smarty->assign('goods_cat_id', $goods['cat_id']);
 	$smarty->assign('brand_list', get_brand_list());
-	// 代码增加_start_derek20150129admin_goods  bbs.hongyuvip.com
+	// 代码增加_start_derek20150129admin_goods  www.hongyuvip.com
 	
     $smarty->assign('brand_list_new', get_brand_list(true));
 	
-	// 代码增加_start_derek20150129admin_goods  bbs.hongyuvip.com
+	// 代码增加_start_derek20150129admin_goods  www.hongyuvip.com
     
     $smarty->assign('unit_list', get_unit_list());
     $smarty->assign('user_rank_list', get_user_rank_list());
@@ -591,10 +591,10 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
 
         // 相册图片
 
-		/* 代码增加_start   By bbs.hongyuvip.com */
+		/* 代码增加_start   By www.hongyuvip.com */
 		if($_FILES['img_url']['error'])
 		{
-		/* 代码增加_end   By bbs.hongyuvip.com */
+		/* 代码增加_end   By www.hongyuvip.com */
 
         foreach ($_FILES['img_url']['error'] AS $key => $value)
         {
@@ -615,9 +615,9 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
             }
         }
 
-		/* 代码增加_start   By bbs.hongyuvip.com */
+		/* 代码增加_start   By www.hongyuvip.com */
 		}
-		/* 代码增加_end   By bbs.hongyuvip.com */
+		/* 代码增加_end   By www.hongyuvip.com */
 
     }
     /* 4.1版本 */
@@ -1075,7 +1075,7 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
 	}
 
     
-		/* 代码增加_start  By  bbs.hongyuvip.com */
+		/* 代码增加_start  By  www.hongyuvip.com */
 	if ($is_insert)
 	{
 		$dir_clear  = get_dir('category', $catgory_id);
@@ -1086,7 +1086,7 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
 	{
 		clearhtml_file('goods', $catgory_id, $goods_id);
 	}
-	/* 代码增加_end  By  bbs.hongyuvip.com */
+	/* 代码增加_end  By  www.hongyuvip.com */
 	
 	/* 代码增加_start  Byjdy    为了便于新手朋友修改，这里采用增加代码的方法来修改，没有采用修改代码的方法 */
 	 $sql = "UPDATE " .$ecs->table('goods'). " SET is_catindex = '$_REQUEST[is_catindex]' WHERE goods_id = '$goods_id' LIMIT 1";
@@ -1330,12 +1330,12 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
         @unlink('../' . $img);
     }
 
-	/* 代码增加_start  By  bbs.hongyuvip.com */
+	/* 代码增加_start  By  www.hongyuvip.com */
 	if ($_REQUEST['act'] == 'update')
 	{	
 		sendsms_pricecut($goods_id);		
 	}
-    /* 代码增加_end  By  bbs.hongyuvip.com */
+    /* 代码增加_end  By  www.hongyuvip.com */
 
     /* 记录上一次选择的分类和品牌 */
     setcookie('ECSCP[last_choose]', $catgory_id . '|' . $brand_id, gmtime() + 86400);
@@ -1712,9 +1712,9 @@ elseif ($_REQUEST['act'] == 'edit_goods_price')
         if ($exc->edit("zhekou = '$zhekou', shop_price = '$goods_price', market_price = '$price_rate', last_update=" .gmtime(), $goods_id))
         {
 			tongbu_cart_price($goods_id);
-		/* 代码增加_start  By  bbs.hongyuvip.com */
+		/* 代码增加_start  By  www.hongyuvip.com */
 		sendsms_pricecut($goods_id);			
-		/* 代码增加_end  By  bbs.hongyuvip.com */
+		/* 代码增加_end  By  www.hongyuvip.com */
 
             clear_cache_files();
             make_json_result(number_format($goods_price, 2, '.', ''));
@@ -1814,14 +1814,14 @@ elseif ($_REQUEST['act'] == 'toggle_on_sale')
     $goods_id       = intval($_POST['id']);
     $on_sale        = intval($_POST['val']);
 
-	/* 代码增加_start  By  bbs.hongyuvip.com */
+	/* 代码增加_start  By  www.hongyuvip.com */
 	$sql="select supplier_id,supplier_status from ". $ecs->table('goods') ." where goods_id='$goods_id' ";
 	$supplier_row =$db->getRow($sql);
 	if ($supplier_row['supplier_id']>0 && $supplier_row['supplier_status'] <=0 )
 	{
 		make_json_error('对不起，该商品还未审核通过！不能上架！');
 	}
-	/* 代码增加_end  By  bbs.hongyuvip.com */
+	/* 代码增加_end  By  www.hongyuvip.com */
 
     if ($exc->edit("is_on_sale = '$on_sale', last_update=" .gmtime(), $goods_id))
     {
@@ -1924,7 +1924,7 @@ elseif ($_REQUEST['act'] == 'query')
     
     
 	if(intval($_REQUEST['supp'])>0){
-		/* 代码增加_start  By bbs.hongyuvip.com */
+		/* 代码增加_start  By www.hongyuvip.com */
 		$supplier_list_name=array();
 		$sql_supplier = "select supplier_id, supplier_name FROM " . $GLOBALS['ecs']->table("supplier") . " where status='1' order by supplier_id ";
 		$res_supplier = $db->query($sql_supplier);
@@ -1937,7 +1937,7 @@ elseif ($_REQUEST['act'] == 'query')
 		$smarty->assign('suppliers_list_name', $supplier_list_name);
 		$supplier_status_list =array('0'=>'未审核', '1'=>'审核通过', '-1'=>'审核未通过');
 		$smarty->assign('supplier_status_list', $supplier_status_list);
-		/* 代码增加_end  By bbs.hongyuvip.com */
+		/* 代码增加_end  By www.hongyuvip.com */
     }
     
     
@@ -2037,7 +2037,7 @@ elseif ($_REQUEST['act'] == 'drop_goods')
     }
 
     /* 取得商品信息 */
-    $sql = "SELECT goods_id, goods_name, is_delete, is_real, goods_thumb, goods_desc, " . //代码修改  By  bbs.hongyuvip.com
+    $sql = "SELECT goods_id, goods_name, is_delete, is_real, goods_thumb, goods_desc, " . //代码修改  By  www.hongyuvip.com
                 "goods_img, original_img " .
             "FROM " . $ecs->table('goods') .
             " WHERE goods_id = '$goods_id'";
@@ -2052,7 +2052,7 @@ elseif ($_REQUEST['act'] == 'drop_goods')
         make_json_error($_LANG['goods_not_in_recycle_bin']);
     }
 
-	/* 代码增加_start  By  bbs.hongyuvip.com */
+	/* 代码增加_start  By  www.hongyuvip.com */
 	$pattern = "/<[img|IMG].*?src=[\'|\"](.*?)[\'|\"]/";
     preg_match_all($pattern, $goods['goods_desc'], $DesImgs );
 	$domain_www_ecshop68_com = $ecs->get_domain();
@@ -2077,7 +2077,7 @@ elseif ($_REQUEST['act'] == 'drop_goods')
 	//	@unlink($final_img_del_www_ecshop68_com);
 	}
 	//exit;
-	/* 代码增加_end  By  bbs.hongyuvip.com */
+	/* 代码增加_end  By  www.hongyuvip.com */
 
     /* 删除商品图片和轮播图片 */
     if (!empty($goods['goods_thumb']))
@@ -3299,7 +3299,7 @@ function update_goods_stock($goods_id, $value)
 }
 
 
-/* 代码增加_start  BY  bbs.hongyuvip.com */
+/* 代码增加_start  BY  www.hongyuvip.com */
 
 function sendsms_pricecut($goods_id)
 {
@@ -3402,7 +3402,7 @@ function bargain_price($price, $start, $end)
         }
     }
 }
-/* 代码增加_end  BY  bbs.hongyuvip.com */
+/* 代码增加_end  BY  www.hongyuvip.com */
 
 /**
  * 将商品分类列表转换成符合zTree标准的JSON格式

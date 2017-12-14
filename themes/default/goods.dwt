@@ -317,11 +317,11 @@ function reg(str){
        </table>
       </li>
       <!--{/if}-->
-      <!-- 代码修改_start  By  bbs.hongyuvip.com -->
+      <!-- 代码修改_start  By  www.hongyuvip.com -->
       <li class="clearfix">
            <a class="compare-btn" data-goods="{$goods.goods_id}" data-type="{$goods.goods_type}" onclick="Compare.add({$goods.goods_id},'{$goods.goods_name|escape:"html"}','{$goods.goods_type}', '{$goods.goods_thumb}', '{$goods.shop_price}')"></a>
       </li>
-      <!-- 代码修改_end  By  bbs.hongyuvip.com -->
+      <!-- 代码修改_end  By  www.hongyuvip.com -->
 
       <!--{if $goods.is_promote and $goods.gmt_end_time } 促销-->
       {insert_scripts files='lefttime.js'}
@@ -670,7 +670,7 @@ function changePriceResponse(res)
 }
 <!-- {/literal} -->
 </script>
-<!-- 代码增加_end  By  bbs.hongyuvip.com -->
+<!-- 代码增加_end  By  www.hongyuvip.com -->
 <script type="text/javascript" src="{$option.static_path}js/compare.js"></script>
 <script type="text/javascript" src="{$option.static_path}js/json2.js"></script>
 <script type="text/javascript" src="{$option.static_path}js/jquery.js"></script>
@@ -784,5 +784,5 @@ function toggle_compare_box()
     </div>
 </div>
 <a class="compareHolder" href="javascript:void(0)" onClick="toggle_compare_box()">对比栏</a>
-<!-- 代码增加_end  By  bbs.hongyuvip.com -->
+<!-- 代码增加_end  By  www.hongyuvip.com -->
 </html>

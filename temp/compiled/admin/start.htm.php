@@ -97,12 +97,12 @@
                         <span><?php echo $this->_var['task']['commission']; ?> 个</span>
                     </li>
                     <li class="li_even">
-                        <!-- 代码修改_start  By  bbs.hongyuvip.com -->
+                        <!-- 代码修改_start  By  www.hongyuvip.com -->
                         <!--
                         <strong><a href="goods.php?act=list&supplier_status=0">待审核商品</a></strong>
                         -->
                         <strong><a href="goods.php?act=list&supp=1&supplier_status=0">待审核商品</a></strong>
-                        <!-- 代码修改_end  By  bbs.hongyuvip.com -->
+                        <!-- 代码修改_end  By  www.hongyuvip.com -->
                         <span><?php echo $this->_var['task']['goods']; ?> 个</span>
                     </li>
                     <li>

@@ -72,13 +72,13 @@ function read_file($file_name)
 
 if ($_GET['act'] == 'check') {
 
-    /* 代码修改_start BY bbs.hongyuvip.com */
+    /* 代码修改_start BY www.hongyuvip.com */
 
     $mobile = isset($_POST['mobile']) ? trim($_POST['mobile']) : '';
 
     $mobile_code = isset($_POST['mobile_code']) ? trim($_POST['mobile_code']) : '';
 
-    /* 代码修改_end BY bbs.hongyuvip.com */
+    /* 代码修改_end BY www.hongyuvip.com */
 
 
     if (time() - $_SESSION['time'] > 30 * 60) {
@@ -120,13 +120,13 @@ if ($_GET['act'] == 'check') {
 if ($_GET['act'] == 'send') {
 
 
-    /* 代码修改_start BY bbs.hongyuvip.com */
+    /* 代码修改_start BY www.hongyuvip.com */
 
     $mobile = isset($_POST['mobile']) ? trim($_POST['mobile']) : '';
 
     $mobile_code = isset($_POST['mobile_code']) ? trim($_POST['mobile_code']) : '';
 
-    /* 代码修改_end BY bbs.hongyuvip.com */
+    /* 代码修改_end BY www.hongyuvip.com */
 
 
     //session_start();

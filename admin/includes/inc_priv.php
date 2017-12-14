@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 权限对照表
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -80,7 +80,7 @@ $purview['vote_list'] = 'vote_priv';
 // 会员管理权限
 $purview['03_users_list'] = 'users_manage';
 
-$purview['04_users_export'] = 'users_manage'; // 代码增加 By bbs.hongyuvip.com
+$purview['04_users_export'] = 'users_manage'; // 代码增加 By www.hongyuvip.com
 
 $purview['04_users_add'] = 'users_manage';
 $purview['05_user_rank_list'] = 'user_rank';
@@ -149,9 +149,9 @@ $purview['12_invoice_list'] = 'invoice_manage';
 
 // 报表统计权限
 $purview['flow_stats'] = 'client_flow_stats';
-/* 代码添加_START By bbs.hongyuvip.com */
+/* 代码添加_START By www.hongyuvip.com */
 $purview['keyword'] = 'client_flow_stats';
-/* 代码添加_SEND By bbs.hongyuvip.com */
+/* 代码添加_SEND By www.hongyuvip.com */
 $purview['report_guest'] = 'client_flow_stats';
 $purview['report_users'] = 'client_flow_stats';
 $purview['visit_buy_per'] = 'client_flow_stats';
@@ -223,11 +223,11 @@ $purview['06_supplier_tag'] = 'supplier_tag';
 // $purview['weixin_qiandao']= 'weixin_qiandao';
 // $purview['weixin_addkey']= 'weixin_addkey';
 $purview['website'] = 'website';
-/* 代码增加_start By bbs.hongyuvip.com */
+/* 代码增加_start By www.hongyuvip.com */
 $purview['16_takegoods_list'] = 'takegoods_list';
 $purview['16_takegoods_order'] = 'takegoods_order';
 $purview['website'] = 'website';
-/* 代码增加_end By bbs.hongyuvip.com */
+/* 代码增加_end By www.hongyuvip.com */
 
 // 自提点管理权限
 $purview['pickup_point_list'] = 'pickup_point_manage';

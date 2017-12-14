@@ -1,6 +1,6 @@
 <?php
 /**
-* @作者   http://bbs.hongyuvip.com/
+* @作者   http://www.hongyuvip.com/
 */
 
 $_CFG['static_path'] = ''; // 静态文件路径

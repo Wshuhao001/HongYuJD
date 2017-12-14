@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 专题前台
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -133,7 +133,7 @@ if (!$smarty->is_cached($templates, $cache_id))
 /* 显示模板 */
 $smarty->display($templates, $cache_id);
 
-/* 代码增加_start  By  bbs.hongyuvip.com   */
+/* 代码增加_start  By  www.hongyuvip.com   */
 make_html();
-/* 代码增加_end  By  bbs.hongyuvip.com   */
+/* 代码增加_end  By  www.hongyuvip.com   */
 ?>

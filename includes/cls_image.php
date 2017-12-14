@@ -14,7 +14,7 @@
  *
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -264,7 +264,7 @@ class cls_image
         }
 
         /* 生成文件 */
-	/* wei2 修改 start by bbs.hongyuvip.com */
+	/* wei2 修改 start by www.hongyuvip.com */
         if (function_exists('imagejpeg'))
         {
             $filename .= '.jpg';
@@ -280,7 +280,7 @@ class cls_image
             $filename .= '.png';
             imagepng($img_thumb, $dir . $filename, 95);
         }
- 	/* wei2 修改 end by bbs.hongyuvip.com */
+ 	/* wei2 修改 end by www.hongyuvip.com */
         else
         {
             $this->error_msg = $GLOBALS['_LANG']['creating_failure'];

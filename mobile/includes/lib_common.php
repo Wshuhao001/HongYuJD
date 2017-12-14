@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 公用函数库
  * ============================================================================
  * 版权所有 2015-2018 鸿宇多用户商城科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com;
+ * 网站地址: http://www.hongyuvip.com;
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -3157,7 +3157,7 @@ function pushUserMsg($ecuid,$msg=array(),$type=1){
 	}
 }
 
-/* 代码增加_start   By bbs.hongyuvip.com */
+/* 代码增加_start   By www.hongyuvip.com */
 function get_city_info($province, $city, $district)
 {
 	$sql = 'select region_id from ' . $GLOBALS['ecs']->table('region') . " where region_name='$province'";
@@ -3178,5 +3178,5 @@ function get_city_info($province, $city, $district)
 	return array('province_id' => $province_id, 'province' => $province, 'city_id' => $city_id, 'city' => $city,
 				'district_id' => $district_id, 'district' => $district);
 }
-/* 代码增加_end   By bbs.hongyuvip.com */
+/* 代码增加_end   By www.hongyuvip.com */
 ?>

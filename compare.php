@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 商品比较程序
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -92,7 +92,7 @@ if (!empty($_REQUEST['goods']) && is_array($_REQUEST['goods']) && count($_REQUES
        
     }
 	
-	/* 代码修改_start  By bbs.hongyuvip.com */
+	/* 代码修改_start  By www.hongyuvip.com */
 	$smarty->assign('back_url',   empty($_GET['back_url']) ? $_SERVER['HTTP_REFERER'] : $_GET['back_url']);
     $sql = "SELECT attr_id,attr_name,attr_group FROM " . $ecs->table('attribute') . " WHERE cat_id='$type_id' ORDER BY attr_id";
 	
@@ -125,7 +125,7 @@ if (!empty($_REQUEST['goods']) && is_array($_REQUEST['goods']) && count($_REQUES
 	for($i = count($arr); $i<4; $i++) 
 		$arr[] = array();
     $smarty->assign('attr_list', $attr_list);
-	/* 代码修改_end  By bbs.hongyuvip.com */
+	/* 代码修改_end  By www.hongyuvip.com */
     $smarty->assign('goods_list', $arr);
 }
 else

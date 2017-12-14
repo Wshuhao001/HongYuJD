@@ -4,7 +4,7 @@
  * 鸿宇多用户商城 轮播图片程序
  * ============================================================================
  * 版权所有 2015-2018 鸿宇科技有限公司，并保留所有权利。
- * 网站地址: http://bbs.hongyuvip.com；
+ * 网站地址: http://www.hongyuvip.com；
  * ----------------------------------------------------------------------------
  * 仅供学习交流使用，如需商用请购买正版版权。鸿宇不承担任何法律责任。
  * 踏踏实实做事，堂堂正正做人。
@@ -31,6 +31,6 @@ if (file_exists(ROOT_PATH . DATA_DIR . '/cycle_image.xml'))
 }
 else
 {
-    echo '<?xml version="1.0" encoding="' . EC_CHARSET . '"?><bcaster><item item_url="images/200609/05.jpg" link="http://bbs.hongyuvip.com" /></bcaster>';
+    echo '<?xml version="1.0" encoding="' . EC_CHARSET . '"?><bcaster><item item_url="images/200609/05.jpg" link="http://www.hongyuvip.com" /></bcaster>';
 }
 ?>
