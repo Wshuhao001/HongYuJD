@@ -889,8 +889,8 @@ else
                     </select></td>
                   <td>&nbsp; 或 &nbsp;<a href="javascript:void(0);" onclick="javascript:document.getElementById('Bonus_span_{$key}').style.display='block';document.getElementById('Bonus_a_{$key}').style.display='none';" class="a_other1_h" id="Bonus_a_{$key}">直接输入优惠券号</a></td>
                   <td><label id="Bonus_span_{$key}" style="display:none;">
-                      <input name="bonus_sn[{$key}]" id="bonus_sn_{$key}" type="text"  size="15" value="{if $order.bonus_sn_info[$key]}{$order.bonus_sn_info[$key]}{else}输入优惠券{/if}" onfocus="if (value =='输入优惠券'){value =''}" onblur="if (value ==''){value='输入优惠券'}" style="height:22px;" />
-                      <input name="validate_bonus" type="button" value="使用" onclick="validateBonus(document.getElementById('bonus_sn_{$key}').value,{$key})" class="BonusButton" />
+                      <input name="bonus_sn[{$key}]" id="bonus_sn_{$key}" type="text"  size="15" value="{if $order.bonus_sn_info[$key]}{$order.bonus_sn_info[$key]}{else}输入优惠券{/if}" onfocus="if (value =='输入优惠券'){value =''}" onblur="if (value ==''){value='输入优惠券'}" style="height:22px;float: left;padding: 0 5px;" />
+                      <input name="validate_bonus" type="button" value="使用" onclick="validateBonus(document.getElementById('bonus_sn_{$key}').value,{$key})" class="BonusButton" style="height:26px;float: left;margin-left: 10px;"/>
                     </label></td>
                 </tr>
                 <!-- {/if} --> 
