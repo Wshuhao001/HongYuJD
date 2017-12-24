@@ -365,7 +365,7 @@ elseif ($_REQUEST['act'] == 'action')
 				$users = $GLOBALS['db']->getRow($sql);
                 $time = date('Y-m-d H:i:s');
                 $user_money = $users['user_money'];
-                $content = array($_CFG['sms_deposit_balance_reduce_tpl'],"{\"time\":\"$time\",\"amount\":\"$amount\",\"user_money\":\"$user_money\"}",$_CFG['sms_sign']);
+                $content = array($_CFG['sms_deposit_balance_reduce_tpl'],"{\"time\":\"$time\",\"amount\":\"$amount\",\"userMoney\":\"$user_money\"}",$_CFG['sms_sign']);
 				if($users['mobile_phone'])
 				{
 					include_once('../sms/sms.php');

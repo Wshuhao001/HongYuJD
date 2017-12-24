@@ -5471,7 +5471,7 @@ function action_vc_login_act ()
 		$users = $GLOBALS['db']->getRow($sql);
         $type_money = $vcrow['type_money'];
         $user_money = $users['user_money'];
-        $content = array($_CFG['sms_recharge_balance_add_tpl'],"{\"type_money\":\"$type_money\",\"user_money\":\"$user_money\"}",$_CFG['sms_sign']);
+        $content = array($_CFG['sms_recharge_balance_add_tpl'],"{\"typeMoney\":\"$type_money\",\"userMoney\":\"$user_money\"}",$_CFG['sms_sign']);
 		if($users['mobile_phone'])
 		{
 			include_once ('sms/sms.php');

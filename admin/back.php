@@ -346,7 +346,7 @@ elseif ($_REQUEST['act'] == 'operate_refund')
 			$sql = "SELECT user_money,mobile_phone FROM " . $GLOBALS['ecs']->table('users') . " WHERE user_id = '" . $order['user_id'] . "'";
 			$users = $GLOBALS['db']->getRow($sql);
             $user_money = $users['user_money'];
-            $content = array($_CFG['sms_return_goods_tpl'],"{\"refund_money\":\"$refund_money_2\",\"user_money\":\"$user_money\"}",$_CFG['sms_sign']);
+            $content = array($_CFG['sms_return_goods_tpl'],"{\"refundMoney\":\"$refund_money_2\",\"userMoney\":\"$user_money\"}",$_CFG['sms_sign']);
 			if($users['mobile_phone'])
 			{
 				include_once('../sms/sms.php');

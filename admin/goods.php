@@ -1034,7 +1034,7 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
 	    $msg_goods_url = $GLOBALS['ecs']->url(). $msg_goods_url;
 		$email_content = '您登记的商品 '. $msg_goods_name .' 已经到货，您可点击下面链接直接进入商品页面浏览或购买！<br><a href="'. $msg_goods_url.'">'.$msg_goods_url.'</a>';
         $msg_goods_url = build_uri('goods', array('gid'=>$msg_goods_id), $msg_goods_name);
-		$sms_content   = array($GLOBALS['_CFG']['sms_goods_stockout_tpl'], "{\"msg_goods_name\":\"$msg_goods_name\",\"msg_goods_url\":\"$msg_goods_url\"}",$GLOBALS['_CFG']['sms_sign']);
+		$sms_content   = array($GLOBALS['_CFG']['sms_goods_stockout_tpl'], "{\"msgGoodsName\":\"$msg_goods_name\",\"msgGoodsUrl\":\"$msgGoodsUrl\"}",$GLOBALS['_CFG']['sms_sign']);
 		 for($i=0;$i<count($email);$i++)
 		{
 			if($email[$i]['is_dispose']==0)
@@ -1746,7 +1746,7 @@ elseif ($_REQUEST['act'] == 'edit_goods_number')
 	    $msg_goods_url = $GLOBALS['ecs']->url(). $msg_goods_url;
 		$email_content = '您登记的商品 '. $msg_goods_name .' 已经到货，您可点击下面链接直接进入商品页面浏览或购买！<br><a href="'. $msg_goods_url.'">'.$msg_goods_url.'</a>';
         $msg_goods_url = build_uri('goods', array('gid'=>$msg_goods_id), $msg_goods_name);
-        $sms_content   = array($GLOBALS['_CFG']['sms_goods_stockout_tpl'], "{\"msg_goods_name\":\"$msg_goods_name\",\"msg_goods_url\":\"$msg_goods_url\"}",$GLOBALS['_CFG']['sms_sign']);
+        $sms_content   = array($GLOBALS['_CFG']['sms_goods_stockout_tpl'], "{\"msgGoodsName\":\"$msg_goods_name\",\"msgGoodsUrl\":\"$msgGoodsUrl\"}",$GLOBALS['_CFG']['sms_sign']);
 		 for($i=0;$i<count($email);$i++)
 		{
 			if($email[$i]['is_dispose']==0)
@@ -3328,7 +3328,7 @@ function sendsms_pricecut($goods_id)
 				{
 					//降价通知短信内容
                     $goods_url = build_uri('goods', array('gid'=>$goods_id), $goods_name);
-                    $pricecut_content = array($GLOBALS['_CFG']['sms_pricecut_tpl'], "{\"goods_name\":\"$goods_name\",\"goods_url\":\"$goods_url\"}",$GLOBALS['_CFG']['sms_sign']);
+                    $pricecut_content = array($GLOBALS['_CFG']['sms_pricecut_tpl'], "{\"goodsName\":\"$goods_name\",\"goodsUrl\":\"$goods_url\"}",$GLOBALS['_CFG']['sms_sign']);
 					if($list[$i]['mobile'] != '')
 					{
 						$res = sendSMS($list[$i]['mobile'],$pricecut_content);

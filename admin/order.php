@@ -1096,7 +1096,7 @@ elseif ($_REQUEST['act'] == 'delivery_ship')
             $order_sn = $order['order_sn'];
             $consignee = $order['consignee'];
             $address = $order['address'];
-			$content = array($_CFG['sms_order_shipped_tpl'],"{\"order_sn\":\"$order_sn\",\"consignee\":\"$consignee\",\"address\":\"$address\"}",$_CFG['sms_sign']);
+			$content = array($_CFG['sms_order_shipped_tpl'],"{\"orderSn\":\"$order_sn\",\"consignee\":\"$consignee\",\"address\":\"$address\"}",$_CFG['sms_sign']);
 			sendSMS($order['mobile'],$content);
         }
     }
@@ -3516,7 +3516,7 @@ elseif ($_REQUEST['act'] == 'operate')
             $order_sn = $order['order_sn'];
             $consignee = $order['consignee'];
             $address = $order['address'];
-            $content = array($_CFG['sms_order_shipped_tpl'],"{\"order_sn\":\"$order_sn\",\"consignee\":\"$consignee\",\"address\":\"$address\"}",$_CFG['sms_sign']);
+            $content = array($_CFG['sms_order_shipped_tpl'],"{\"orderSn\":\"$order_sn\",\"consignee\":\"$consignee\",\"address\":\"$address\"}",$_CFG['sms_sign']);
 			sendSMS($order['mobile'],$content);
         }
     }

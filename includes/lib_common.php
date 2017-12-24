@@ -4050,7 +4050,7 @@ function send_sms($supplierinfo='',$content='',$position=1){
 		    	$phones = explode(',',$_CFG['sms_shop_mobile']);
 		    	array_filter($phones);
                 $order_sn = $supplierinfo[0];
-                $content1 = array($content,"{\"order_sn\":\"$order_sn\"}",$_CFG['sms_sign']);
+                $content1 = array($content,"{\"orderSn\":\"$order_sn\"}",$_CFG['sms_sign']);
 
 		    	foreach($phones as $phone){
 		    		sendSMS($phone,$content1);
@@ -4062,7 +4062,7 @@ function send_sms($supplierinfo='',$content='',$position=1){
 		    	$phones = explode(',',$_CFG['sms_shop_mobile']);
 		    	array_filter($phones);
                 $order_sn = $supplierinfo[0];
-                $content1 = array($content,"{\"order_sn\":\"$order_sn\"}",$_CFG['sms_sign']);
+                $content1 = array($content,"{\"orderSn\":\"$order_sn\"}",$_CFG['sms_sign']);
 		    	foreach($phones as $phone){
 		    		sendSMS($phone,$content1);
 		    	}
@@ -4081,7 +4081,7 @@ function send_sms($supplierinfo='',$content='',$position=1){
 		    	$phones = explode(',',$info['sms_shop_mobile']);
 		    	array_filter($phones);
                 $order_sn = $supplierinfo[$val] . $_CFG['shop_name'];
-				$content1 = array($content,"{\"order_sn\":\"$order_sn\"}",$_CFG['sms_sign']);
+				$content1 = array($content,"{\"orderSn\":\"$order_sn\"}",$_CFG['sms_sign']);
 		    	foreach($phones as $phone){
 		    		sendSMS($phone,$content1);
 		    	}
@@ -4092,7 +4092,7 @@ function send_sms($supplierinfo='',$content='',$position=1){
 		    	$phones = explode(',',$info['sms_shop_mobile']);
 		    	array_filter($phones);
                 $order_sn = $supplierinfo[$val] . $_CFG['shop_name'];
-                $content1 = array($content,"{\"order_sn\":\"$order_sn\"}",$_CFG['sms_sign']);
+                $content1 = array($content,"{\"orderSn\":\"$order_sn\"}",$_CFG['sms_sign']);
 		    	foreach($phones as $phone){
 		    		sendSMS($phone,$content1);
 		    	}

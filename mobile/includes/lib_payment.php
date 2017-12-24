@@ -193,7 +193,7 @@ function order_paid($log_id, $pay_status = PS_PAYED, $note = '')
 				   //付款给客户发短信
 				   if($GLOBALS['_CFG']['sms_order_pay'] == 1)
 				   {
-					   $content = array($GLOBALS['_CFG']['sms_order_pay_tpl'],"{\"order_sn\":\"$order_sn\"}",$GLOBALS['_CFG']['sms_sign']);
+					   $content = array($GLOBALS['_CFG']['sms_order_pay_tpl'],"{\"orderSn\":\"$order_sn\"}",$GLOBALS['_CFG']['sms_sign']);
 					   sendSMS($mobile,$content);
 				   }
 
@@ -255,7 +255,7 @@ function order_paid($log_id, $pay_status = PS_PAYED, $note = '')
 				   //付款给客户发短信
 				   if($GLOBALS['_CFG']['sms_order_pay'] == 1)
 				   {
-                       $content = array($GLOBALS['_CFG']['sms_order_pay_tpl'],"{\"order_sn\":\"$order_sn\"}",$GLOBALS['_CFG']['sms_sign']);
+                       $content = array($GLOBALS['_CFG']['sms_order_pay_tpl'],"{\"orderSn\":\"$order_sn\"}",$GLOBALS['_CFG']['sms_sign']);
 					   sendSMS($mobile,$content);
 				   }
                 }

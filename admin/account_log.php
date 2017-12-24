@@ -179,7 +179,7 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
 			$users = $GLOBALS['db']->getRow($sql);
             $time = date('Y-m-d H:i:s');
             $money = $users['user_money'];
-            $content = array($_CFG['sms_admin_operation_tpl'],"{\"time\":\"$time\",\"user_money\":\"$user_money\",\"money\":\"$money\"}",$_CFG['sms_sign']);
+            $content = array($_CFG['sms_admin_operation_tpl'],"{\"time\":\"$time\",\"userMoney\":\"$user_money\",\"money\":\"$money\"}",$_CFG['sms_sign']);
 			if($users['mobile_phone'])
 			{
 				include_once('../sms/sms.php');
