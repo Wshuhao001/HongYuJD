@@ -6,7 +6,7 @@
 <li> <a href="./">
     <i class="vf_1"></i>
     <span>首页</span></a></li>
-<li><a href="tel:{insert name='ecsmart_tel'}">
+<li><a href="http://wpa.qq.com/msgrd?V=1&uin={insert name='ecsmart_qq'}&Menu=yes">
     <i class="vf_2"></i>
     <span>客服</span></a></li>
 <li><a href="catalog.php">

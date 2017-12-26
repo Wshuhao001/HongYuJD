@@ -234,10 +234,20 @@ function insert_cart_info()
 
 /**
  * 获取客服电话
- * @return type
+ * @return mixed
  */
 function insert_ecsmart_tel(){
     $sql = "select value from ".$GLOBALS['ecs']->table('ecsmart_shop_config')." where code = 'service_phone'";
+    $tel = $GLOBALS['db']->getOne($sql);
+    return $tel;
+}
+
+/**
+ * 获取客服QQ
+ * @return mixed
+ */
+function insert_ecsmart_qq(){
+    $sql = "select value from ".$GLOBALS['ecs']->table('ecsmart_shop_config')." where code = 'qq'";
     $tel = $GLOBALS['db']->getOne($sql);
     return $tel;
 }
