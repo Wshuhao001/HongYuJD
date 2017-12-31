@@ -1,4 +1,4 @@
-.showpage{ width:100%; overflow:hidden; background:#F2F2F2}
+.showpage{ max-width: 640px; margin: 0 auto; overflow:hidden; background:#F2F2F2}
 
 
 /*头部样式*/
