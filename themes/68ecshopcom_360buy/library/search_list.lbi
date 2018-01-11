@@ -17,7 +17,7 @@
         	<span>卖家：</span>
             <a href="supplier.php?suppId={$shop.supplier_id}" title="{$shop.shop_name}管理员" target="_blank">{$shop.user_name}</a>
             <a href="http://wpa.qq.com/msgrd?v=3&uin={$shop.qq}&site=qq&menu=yes" target="_blank" alt="点击这里联系我" title="点击这里联系我" class="flow-qq"><img src="http://wpa.qq.com/pa?p=1:{$shop.qq}:4" height="16" border="0" alt="QQ" /></a>
-            <a href="http://amos1.taobao.com/msg.ww?v=2&uid={$shop.ww}&s=2" target="_blank" class="flow-qq"><img src="http://amos1.taobao.com/online.ww?v=2&uid={$shop.ww}&s=2" width="16" height="16" border="0" alt="淘宝旺旺" /></a>
+            <a href="http://www.taobao.com/webww/ww.php?ver=3&touid={$shop.ww}&siteid=cntaobao&status=2&charset=utf-8"target="_blank" class="flow-qq"><img src="http://amos.alicdn.com/online.aw?v=2&uid={$shop.ww}&site=cntaobao&s=2&charset=utf-8" width="16" height="16" border="0" alt="淘宝旺旺" /></a>
         </p>
         <p class="flow-desc">
         	<span>所在地：</span>{$shop.address}

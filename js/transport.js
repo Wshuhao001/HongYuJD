@@ -23,7 +23,7 @@ var Transport =
   */
   debugging :
   {
-    isDebugging : 1,
+    isDebugging : 0,
     debuggingMode : 1, // 修复transport.js弹窗错误
     linefeed : "",
     containerId : 0

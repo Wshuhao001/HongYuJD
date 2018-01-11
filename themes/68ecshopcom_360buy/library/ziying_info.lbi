@@ -29,7 +29,7 @@
 
     <!-- 淘宝旺旺 {foreach from=$ww item=im} -->
 <!-- {if $im} -->
-    <a href="http://amos1.taobao.com/msg.ww?v=2&uid={$im|escape:u8_url}&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid={$im|escape:u8_url}&s=2" width="16" height="16" border="0" alt="淘宝旺旺" /></a>
+    <a href="http://www.taobao.com/webww/ww.php?ver=3&touid={$im|escape:u8_url}&siteid=cntaobao&status=2&charset=utf-8"target="_blank"><img src="http://amos.alicdn.com/online.aw?v=2&uid={$im|escape:u8_url}&site=cntaobao&s=2&charset=utf-8" width="16" height="16" border="0" alt="淘宝旺旺" /></a>
 <!-- {/if} -->
       <!--{/foreach} 结束淘宝旺旺 -->
     </em></dt>
