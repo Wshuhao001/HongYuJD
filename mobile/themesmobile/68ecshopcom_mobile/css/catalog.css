@@ -1,7 +1,7 @@
 /*=========index-top========*/
 
 /*分类页面css*/
-.container{ width:100%; padding:0; overflow:hidden; margin:auto;}
+.container{ max-width: 640px; padding:0; overflow:hidden; margin:auto;}
 
 .category-box{ margin-top:-45px; height:100%; width:100%; overflow:hidden}
 .category1{ height:100%; float:left; width:25%;background-color:#fff;}
