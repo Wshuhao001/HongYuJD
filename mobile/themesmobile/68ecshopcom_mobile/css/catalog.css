@@ -12,7 +12,7 @@
 
 .category2{ float:left; width:75%; height:100%; background-color:#f4f4f4; }
 .category2 dl{ width:95%; margin:auto;overflow:hidden; padding-bottom:60px}
-.category2 dl span{ display:block; width:100%; height:100px; overflow:hidden; position:relative; margin-top:8px;}
+.category2 dl span{ display:none; width:100%; height:100px; overflow:hidden; position:relative; margin-top:8px;}
 .category2 dl span img{ display:block; width:100%; height:auto}
 .category2 dl span em{ display:block; width:10px; font-size:12px; height:60px; position:absolute; right:0px; bottom:0px;
  padding:25px 10px 25px 10px;background-color:rgba(27,27,27,0.5); color:#FFF; font-style:normal; line-height:150%; font-family:'宋体';} 
