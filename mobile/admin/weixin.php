@@ -490,7 +490,7 @@ switch ($act){
 			$link [] = array ('href' => 'weixin.php?act=addconfig','text' => '多帐号管理');
 			sys_msg ( '操作成功', 0, $link );
 		}else{
-			$baseurl = $_SERVER['SERVER_NAME'] ? "http://".$_SERVER['SERVER_NAME']."/" : "http://".$_SERVER['HTTP_HOST']."/";
+			$baseurl = $_SERVER['HTTP_HOST'] ? "http://".$_SERVER['HTTP_HOST']."/" : "http://".$_SERVER['SERVER_NAME']."/";
 			$smarty->assign('baseurl',$baseurl);
 			$smarty->assign('list', $db->getAll("SELECT * FROM " . $GLOBALS['ecs']->table('weixin_config') . " WHERE id>1"));
 			$smarty->display ( 'weixin/wx_addconfig.html' );
@@ -525,7 +525,7 @@ switch ($act){
 			}
 		}else{
 			$smarty->assign('action_link',  array('text' => "添加oauth跳转", 'href'=>'weixin.php?act=oauth&t=add'));
-			$baseurl = $_SERVER['SERVER_NAME'] ? "http://".$_SERVER['SERVER_NAME']."/" : "http://".$_SERVER['HTTP_HOST']."/";
+			$baseurl = $_SERVER['HTTP_HOST'] ? "http://".$_SERVER['HTTP_HOST']."/" : "http://".$_SERVER['SERVER_NAME']."/";
 			$smarty->assign('baseurl',$baseurl);
 			$oauth = $db->getAll("select * from " . $GLOBALS['ecs']->table('weixin_oauth') . "
 ");

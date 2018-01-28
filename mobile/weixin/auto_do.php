@@ -1,7 +1,7 @@
 <?php
 require(dirname(__FILE__) . '/api.class.php');
 require(dirname(__FILE__) . '/wechat.class.php');
-$baseurl = $_SERVER['SERVER_NAME'] ? "http://".$_SERVER['SERVER_NAME']."/" : "http://".$_SERVER['HTTP_HOST']."/";
+$baseurl = $_SERVER['HTTP_HOST'] ? "http://".$_SERVER['HTTP_HOST']."/" : "http://".$_SERVER['SERVER_NAME']."/";
 $t = time();
 $type = intval($_GET['type']);
 $rs = $db->getRow ( "SELECT * FROM " . $GLOBALS['ecs']->table('weixin_corn') . " WHERE `issend` = 0 and `sendtype`={$type} order by sendtime desc" );

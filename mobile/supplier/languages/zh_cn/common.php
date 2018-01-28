@@ -14,7 +14,7 @@
 */
 
 $_LANG['app_name'] = 'ECSHOP';
-$_LANG['cp_home'] = '鸿宇多用户商城 - 鸿宇多用户商城V4.2 ECshop论坛交流中心 HongYuvip.com 管理中心';
+$_LANG['cp_home'] = '鸿宇多用户商城 - 鸿宇多用户商城V4.2 ECshop论坛交流中心 hongyuvip.com 管理中心';
 $_LANG['copyright'] = '版权所有 &copy; 2008-2015 鸿宇多用户商城科技有限公司，并保留所有权利。';
 $_LANG['query_info'] = '共执行 %d 个查询，用时 %s 秒';
 $_LANG['memory_info'] = '，内存占用 %0.3f MB';

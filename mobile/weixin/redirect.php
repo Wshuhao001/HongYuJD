@@ -2,7 +2,7 @@
 define('IN_ECS', true);
 require_once('../includes/init.php');
 
-$weburl = $_SERVER['SERVER_NAME'] ? "http://".$_SERVER['SERVER_NAME']."/" : "http://".$_SERVER['HTTP_HOST']."/";
+$weburl = $_SERVER['HTTP_HOST'] ? "http://".$_SERVER['HTTP_HOST']."/" : "http://".$_SERVER['SERVER_NAME']."/";
 $token = $_GET['token'];
 $t = $_GET['t'];
 $wxid = $_GET['wxid'];

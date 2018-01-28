@@ -9130,7 +9130,7 @@ INSERT INTO `ecs_shop_config` VALUES ('424', '4', 'cart_confirm', 'hidden', '1,2
 INSERT INTO `ecs_shop_config` VALUES ('425', '4', 'send_service_email', 'select', '1,0', '', '0', '1');
 INSERT INTO `ecs_shop_config` VALUES ('426', '4', 'show_goods_in_cart', 'hidden', '1,2,3', '', '3', '1');
 INSERT INTO `ecs_shop_config` VALUES ('427', '4', 'show_attr_in_cart', 'select', '1,0', '', '1', '1');
-INSERT INTO `ecs_shop_config` VALUES ('501', '5', 'smtp_host', 'text', '', '', 'smtp.126.com', '1');
+INSERT INTO `ecs_shop_config` VALUES ('501', '5', 'smtp_host', 'text', '', '', 'smtp.qq.com', '1');
 INSERT INTO `ecs_shop_config` VALUES ('502', '5', 'smtp_port', 'text', '', '', '465', '1');
 INSERT INTO `ecs_shop_config` VALUES ('503', '5', 'smtp_user', 'text', '', '', '', '1');
 INSERT INTO `ecs_shop_config` VALUES ('504', '5', 'smtp_pass', 'password', '', '', '', '1');

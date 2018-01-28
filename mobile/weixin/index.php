@@ -12,7 +12,7 @@ if ($id > 0) {
         $weixinconfig['appsecret'] = $otherconfig['appsecret'];
     }
 }
-$baseurl = $weburl = $_SERVER['SERVER_NAME'] ? "http://" . $_SERVER['SERVER_NAME'] . "/" : "http://" . $_SERVER['HTTP_HOST'] . "/";
+$baseurl = $weburl = $_SERVER['HTTP_HOST'] ? "http://" . $_SERVER['HTTP_HOST'] . "/" : "http://" . $_SERVER['SERVER_NAME'] . "/";
 //$weburl .= $weixinconfig['wap_url'] ? $weixinconfig['wap_url'] : "";
 $weixin = new core_lib_wechat($weixinconfig);
 $weixin->valid();

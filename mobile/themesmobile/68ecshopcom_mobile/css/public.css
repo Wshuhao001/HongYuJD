@@ -62,7 +62,7 @@ width: 0;height: 0;border-style: solid;border-color: transparent transparent #56
 .goods_nav{ width:30%; float:right; right:5px; overflow:hidden; position:fixed;margin-top:-20px; z-index:9999999}
 
 /*底部模块*/ 
-.footer { background-color: #F8F8F8; text-align: center; width:100%; overflow:hidden; padding-bottom:10px; padding-top:10px;}
+.footer { background-color: #F8F8F8; text-align: center; max-width:640px; margin: 0 auto; overflow:hidden; padding-bottom:10px; padding-top:10px;}
 .footer a { display: inline-block; /*padding: 0 1em*/ }
 .footer span { color: #82858A; }
 .footer .tip { padding: 0 0 1.5em }
