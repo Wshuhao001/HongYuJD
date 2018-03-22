@@ -32,9 +32,13 @@
         <div class="box_1">
           <h3><span>{$lang.groupbuy_goods_info}</span></h3>
           <div class="boxCenterList">
-            <ul class="group clearfix">
+            <style type="text/css">
+              .group-buy-ul{width: 100%;border-bottom:1px #dddddd dashed;padding-bottom:5px;padding-bottom:15px;}
+              .group-buy-li-right{width: 730px;}
+            </style>
+            <ul class="group clearfix group-buy-ul">
               <li class="f_l"> <a href="{$gb_goods.url}"><img src="{$gb_goods.goods_thumb}" alt="{$gb_goods.goods_name|escape:html}" style="margin-right:10px; " /></a> </li>
-              <li class="f_l"> {$lang.gb_goods_name} <font class="f5">{$gb_goods.goods_name|escape:html}</font><br>
+              <li class="group-buy-ul-right"> {$lang.gb_goods_name} <font class="f5">{$gb_goods.goods_name|escape:html}</font><br>
                 <!-- {if $cfg.show_goodssn && 0} --> 
                 {$lang.goods_sn} {$gb_goods.goods_sn}<br>
                 <!-- {/if} --> 
