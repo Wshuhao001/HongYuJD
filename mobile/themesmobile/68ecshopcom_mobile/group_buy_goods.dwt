@@ -77,7 +77,7 @@
                         <div class="product_swipe" style="text-align:center">
                             <!-- 单品介绍图片 -->
                             <a href="{$gb_goods.url}">
-                                <img src="{$gb_goods.goods_img}" alt="{$gb_goods.goods_name|escape:html}" width="100%"/>
+                                <img src="{$gb_goods.original_img}" alt="{$gb_goods.goods_name|escape:html}" width="100%"/>
                             </a>
                         </div>
                         <div class="product_info">

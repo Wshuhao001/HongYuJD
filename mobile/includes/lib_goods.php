@@ -1338,7 +1338,9 @@ function goods_info($goods_id)
             ($row['goods_weight'] * 1000) . $GLOBALS['_LANG']['gram'];
 
         /* 修正图片 */
-        $row['goods_img'] =  '../'.get_image_path($goods_id, $row['goods_img']);
+        $row['goods_img'] = '../' . get_image_path($goods_id, $row['goods_img']);   // 图片路径错误
+        $row['goods_thumb'] = '../' . get_image_path($goods_id, $row['goods_thumb']);   // goods_thumb 团购调用正确路径
+        $row['original_img'] = '../' . get_image_path($goods_id, $row['original_img']);   // original_img 团购调用正确路径
     }
 
     return $row;

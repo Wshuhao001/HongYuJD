@@ -124,9 +124,10 @@
                 <!-- {if $smarty.session.user_id > 0} 如果登录了，显示购买按钮 -->
                 <tr>
                   <td bgcolor="#FFFFFF"><strong>{$lang.number}:</strong></td>
-                  <td bgcolor="#FFFFFF"><input name="number" type="text" class="inputBg" id="number" value="1" size="4" style="vertical-align:middle;" />
+                  <td bgcolor="#FFFFFF">
+                    <input name="number" type="text" class="inputBg" id="number" value="1" size="4" style="vertical-align:middle;" />
                     <input type="hidden" name="group_buy_id" value="{$group_buy.group_buy_id}" />
-                    <input type="image" src="images/bnt_buy_1.gif" style="vertical-align:middle;" /></td>
+                    <input type="image" src="images/goumaizuhe.gif" style="vertical-align:middle;cursor: pointer;" /></td>
                 </tr>
                 <!-- {else} 如果没有登录，显示提示信息 -->
                 <tr>
