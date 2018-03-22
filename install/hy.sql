@@ -4330,7 +4330,7 @@ CREATE TABLE `ecs_nav` (
 INSERT INTO `ecs_nav` VALUES ('1', '', '0', '店铺街', '1', '3', '0', 'stores.php', 'middle');
 INSERT INTO `ecs_nav` VALUES ('2', '', '0', '预售', '1', '7', '0', 'pre_sale.php', 'middle');
 INSERT INTO `ecs_nav` VALUES ('3', '', '0', '拍卖', '1', '9', '0', 'auction.php', 'middle');
-INSERT INTO `ecs_nav` VALUES ('4', '', '0', '团购', '1', '5', '0', 'pro_search.php?intro=promotion', 'middle');
+INSERT INTO `ecs_nav` VALUES ('4', '', '0', '团购', '1', '5', '0', 'group_buy.php', 'middle');
 INSERT INTO `ecs_nav` VALUES ('5', 'c', '1', '食品生鲜', '1', '1', '0', 'category.php?id=1', 'middle');
 INSERT INTO `ecs_nav` VALUES ('6', '', '0', '礼包', '0', '11', '0', 'package.php', 'middle');
 INSERT INTO `ecs_nav` VALUES ('7', '', '0', '积分商城', '1', '13', '0', 'exchange.php', 'middle');
