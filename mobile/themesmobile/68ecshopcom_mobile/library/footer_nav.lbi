@@ -6,7 +6,7 @@
 <li> <a href="./">
     <i class="vf_1"></i>
     <span>首页</span></a></li>
-<li><a href="javascript:void(0);" onclick="javascript:window.location.href = 'mqqwpa://im/chat?chat_type=wpa&uin={insert name='ecsmart_qq'}&version=1&src_type=web&web_src=oicqzone.com'">
+<li><a href="http://wpa.qq.com/msgrd?v=3&uin={insert name='ecsmart_qq'}&site=qq&menu=yes" target="_blank">
     <i class="vf_2"></i>
     <span>客服</span></a></li>
 <li><a href="catalog.php">
